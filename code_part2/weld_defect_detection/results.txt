@@ -1,0 +1,29 @@
+FP32:
+Count:      9340 iterations
+Duration:   60034.73 ms
+Latency:    24.76 ms
+Throughput: 155.58 FPS
+
+accuracy @ -0.25..+1s delay 0.9856979405034325
+noisiness 0.052631578947368474
+
+
+FP16:
+Count:      9332 iterations
+Duration:   60032.96 ms
+Latency:    24.80 ms
+Throughput: 155.45 FPS
+
+accuracy @ -0.25..+1s delay 0.9856979405034325
+noisiness 0.052631578947368474
+
+
+FP16-INT8:
+Count:      12452 iterations
+Duration:   60016.36 ms
+Latency:    18.64 ms
+Throughput: 207.48 FPS
+
+accuracy @ -0.25..+1s delay 0.9848398169336384
+noisiness 0.18181818181818177
+

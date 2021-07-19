@@ -1,0 +1,262 @@
+<?xml version="1.0" ?>
+<net name="nn_jmeint-2D" version="7">
+	<layers>
+		<layer id="0" name="conv2d_input" type="Input">
+			<output>
+				<port id="0" precision="FP16">
+					<dim>1</dim>
+					<dim>1</dim>
+					<dim>200</dim>
+					<dim>3600</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="1" name="conv2d/Conv2D" type="Convolution">
+			<data auto_pad="valid" dilations="1,1" group="1" kernel="1,18" output="32" pads_begin="0,0" pads_end="0,0" strides="1,18"/>
+			<input>
+				<port id="0">
+					<dim>1</dim>
+					<dim>1</dim>
+					<dim>200</dim>
+					<dim>3600</dim>
+				</port>
+			</input>
+			<output>
+				<port id="3" precision="FP16">
+					<dim>1</dim>
+					<dim>32</dim>
+					<dim>200</dim>
+					<dim>200</dim>
+				</port>
+			</output>
+			<blobs>
+				<weights offset="0" precision="FP16" size="1152"/>
+				<biases offset="1152" precision="FP16" size="64"/>
+			</blobs>
+		</layer>
+		<layer id="2" name="conv2d/Relu" type="ReLU">
+			<input>
+				<port id="0">
+					<dim>1</dim>
+					<dim>32</dim>
+					<dim>200</dim>
+					<dim>200</dim>
+				</port>
+			</input>
+			<output>
+				<port id="1" precision="FP16">
+					<dim>1</dim>
+					<dim>32</dim>
+					<dim>200</dim>
+					<dim>200</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="3" name="conv2d_1/Conv2D" type="Convolution">
+			<data auto_pad="valid" dilations="1,1" group="1" kernel="1,1" output="8" pads_begin="0,0" pads_end="0,0" strides="1,1"/>
+			<input>
+				<port id="0">
+					<dim>1</dim>
+					<dim>32</dim>
+					<dim>200</dim>
+					<dim>200</dim>
+				</port>
+			</input>
+			<output>
+				<port id="3" precision="FP16">
+					<dim>1</dim>
+					<dim>8</dim>
+					<dim>200</dim>
+					<dim>200</dim>
+				</port>
+			</output>
+			<blobs>
+				<weights offset="1216" precision="FP16" size="512"/>
+				<biases offset="1728" precision="FP16" size="16"/>
+			</blobs>
+		</layer>
+		<layer id="4" name="conv2d_1/Relu" type="ReLU">
+			<input>
+				<port id="0">
+					<dim>1</dim>
+					<dim>8</dim>
+					<dim>200</dim>
+					<dim>200</dim>
+				</port>
+			</input>
+			<output>
+				<port id="1" precision="FP16">
+					<dim>1</dim>
+					<dim>8</dim>
+					<dim>200</dim>
+					<dim>200</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="5" name="conv2d_2/Conv2D" type="Convolution">
+			<data auto_pad="valid" dilations="1,1" group="1" kernel="1,1" output="1" pads_begin="0,0" pads_end="0,0" strides="1,1"/>
+			<input>
+				<port id="0">
+					<dim>1</dim>
+					<dim>8</dim>
+					<dim>200</dim>
+					<dim>200</dim>
+				</port>
+			</input>
+			<output>
+				<port id="3" precision="FP16">
+					<dim>1</dim>
+					<dim>1</dim>
+					<dim>200</dim>
+					<dim>200</dim>
+				</port>
+			</output>
+			<blobs>
+				<weights offset="1744" precision="FP16" size="16"/>
+				<biases offset="1760" precision="FP16" size="2"/>
+			</blobs>
+		</layer>
+		<layer id="6" name="165/copy_const" type="Const">
+			<output>
+				<port id="1" precision="FP16">
+					<dim>1</dim>
+					<dim>1</dim>
+					<dim>1</dim>
+					<dim>1</dim>
+				</port>
+			</output>
+			<blobs>
+				<custom offset="1762" precision="FP16" size="2"/>
+			</blobs>
+		</layer>
+		<layer id="7" name="conv2d_2/clip_by_value/Minimum/Max_" type="Eltwise">
+			<data operation="max"/>
+			<input>
+				<port id="0">
+					<dim>1</dim>
+					<dim>1</dim>
+					<dim>200</dim>
+					<dim>200</dim>
+				</port>
+				<port id="1">
+					<dim>1</dim>
+					<dim>1</dim>
+					<dim>1</dim>
+					<dim>1</dim>
+				</port>
+			</input>
+			<output>
+				<port id="2" precision="FP16">
+					<dim>1</dim>
+					<dim>1</dim>
+					<dim>200</dim>
+					<dim>200</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="8" name="conv2d_2/clip_by_value/Minimum/negate_out_" type="Power">
+			<data power="1" scale="-1" shift="0"/>
+			<input>
+				<port id="0">
+					<dim>1</dim>
+					<dim>1</dim>
+					<dim>200</dim>
+					<dim>200</dim>
+				</port>
+			</input>
+			<output>
+				<port id="1" precision="FP16">
+					<dim>1</dim>
+					<dim>1</dim>
+					<dim>200</dim>
+					<dim>200</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="9" name="conv2d_2/clip_by_value/y/Output_0/Data_/copy_const" type="Const">
+			<output>
+				<port id="1" precision="FP16">
+					<dim>1</dim>
+					<dim>1</dim>
+					<dim>1</dim>
+					<dim>1</dim>
+				</port>
+			</output>
+			<blobs>
+				<custom offset="1764" precision="FP16" size="2"/>
+			</blobs>
+		</layer>
+		<layer id="10" name="conv2d_2/clip_by_value" type="Eltwise">
+			<data operation="max"/>
+			<input>
+				<port id="0">
+					<dim>1</dim>
+					<dim>1</dim>
+					<dim>200</dim>
+					<dim>200</dim>
+				</port>
+				<port id="1">
+					<dim>1</dim>
+					<dim>1</dim>
+					<dim>1</dim>
+					<dim>1</dim>
+				</port>
+			</input>
+			<output>
+				<port id="2" precision="FP16">
+					<dim>1</dim>
+					<dim>1</dim>
+					<dim>200</dim>
+					<dim>200</dim>
+				</port>
+			</output>
+		</layer>
+	</layers>
+	<edges>
+		<edge from-layer="0" from-port="0" to-layer="1" to-port="0"/>
+		<edge from-layer="1" from-port="3" to-layer="2" to-port="0"/>
+		<edge from-layer="2" from-port="1" to-layer="3" to-port="0"/>
+		<edge from-layer="3" from-port="3" to-layer="4" to-port="0"/>
+		<edge from-layer="4" from-port="1" to-layer="5" to-port="0"/>
+		<edge from-layer="5" from-port="3" to-layer="7" to-port="0"/>
+		<edge from-layer="6" from-port="1" to-layer="7" to-port="1"/>
+		<edge from-layer="7" from-port="2" to-layer="8" to-port="0"/>
+		<edge from-layer="8" from-port="1" to-layer="10" to-port="0"/>
+		<edge from-layer="9" from-port="1" to-layer="10" to-port="1"/>
+	</edges>
+	<meta_data>
+		<MO_version value="2020.1.0-61-gd349c3ba4a"/>
+		<cli_parameters>
+			<blobs_as_inputs value="True"/>
+			<data_type value="FP16"/>
+			<disable_nhwc_to_nchw value="False"/>
+			<disable_resnet_optimization value="False"/>
+			<enable_concat_optimization value="False"/>
+			<extensions value="DIR"/>
+			<framework value="tf"/>
+			<freeze_placeholder_with_value value="{}"/>
+			<generate_deprecated_IR_V2 value="False"/>
+			<generate_deprecated_IR_V7 value="True"/>
+			<generate_experimental_IR_V10 value="False"/>
+			<input_model value="DIR/nn_jmeint-2D.pb"/>
+			<input_model_is_text value="False"/>
+			<input_shape value="[1,200,3600,1]"/>
+			<keep_quantize_ops_in_IR value="True"/>
+			<keep_shape_ops value="False"/>
+			<log_level value="ERROR"/>
+			<mean_scale_values value="{}"/>
+			<mean_values value="()"/>
+			<model_name value="nn_jmeint-2D"/>
+			<move_to_preprocess value="False"/>
+			<output_dir value="DIR"/>
+			<placeholder_data_types value="{}"/>
+			<placeholder_shapes value="[   1  200 3600    1]"/>
+			<progress value="False"/>
+			<reverse_input_channels value="False"/>
+			<scale_values value="()"/>
+			<silent value="False"/>
+			<stream_output value="False"/>
+			<unset unset_cli_parameters="batch, disable_fusing, disable_gfusing, finegrain_fusing, input, input_checkpoint, input_meta_graph, output, saved_model_dir, saved_model_tags, scale, tensorboard_logdir, tensorflow_custom_layer_libraries, tensorflow_custom_operations_config_update, tensorflow_object_detection_api_pipeline_config, tensorflow_operation_patterns, tensorflow_subgraph_patterns, tensorflow_use_custom_operations_config, transformations_config"/>
+		</cli_parameters>
+	</meta_data>
+</net>

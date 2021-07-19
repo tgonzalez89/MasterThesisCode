@@ -1,0 +1,4 @@
+python3 infer.py ../../Videos/tesis/fruit/fruit_tf_sep_conv.mp4 4.5 8.0 show
+python3 infer.py ../../Videos/tesis/audio/audio_ov_orig.mp4 4.5 8.0 show
+python3 infer.py ../../Videos/tesis/train.mp4 4.5 8.0 show
+

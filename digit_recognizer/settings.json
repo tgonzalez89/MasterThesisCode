@@ -1,0 +1,1 @@
+{"train.mp4": {"digit_roi": [[551, 648, 95, 95], [632, 644, 95, 95]], "thresh": 70, "min_thresh": 60, "max_thresh": 80}, "fruit_tf_sep_conv.mp4": {"digit_roi": [[490, 570, 95, 95], [570, 570, 95, 95]], "thresh": 70, "min_thresh": 60, "max_thresh": 80}, "audio_ov_orig.mp4": {"digit_roi": [[490, 583, 93, 93], [576, 580, 93, 93]], "thresh": 58, "min_thresh": 55, "max_thresh": 64}}

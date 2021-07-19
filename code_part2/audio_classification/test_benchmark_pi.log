@@ -1,0 +1,1159 @@
+
+BENCHMARKING TENSORFLOW CPU
+
+2020-10-31 21:49:28.348087: E tensorflow/core/platform/hadoop/hadoop_file_system.cc:132] HadoopFileSystem load error: libhdfs.so: cannot open shared object file: No such file or directory
+WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow_core/python/ops/init_ops.py:97: calling GlorotUniform.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow_core/python/ops/init_ops.py:97: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+
+BENCHMARKING TENSORFLOW MODEL models/audio_classification.h5
+
+Processing data...
+Benchmarking...
+Count:      29400 iterations
+Duration:   305643.6734199524 ms
+Throughput: 96.19044186661307 FPS
+2020-10-31 21:55:43.499405: E tensorflow/core/platform/hadoop/hadoop_file_system.cc:132] HadoopFileSystem load error: libhdfs.so: cannot open shared object file: No such file or directory
+WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow_core/python/ops/init_ops.py:97: calling GlorotUniform.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow_core/python/ops/init_ops.py:97: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+
+BENCHMARKING TENSORFLOW MODEL models/audio_classification_input-scaling-0.75.h5
+
+Processing data...
+Benchmarking...
+Count:      48000 iterations
+Duration:   301432.76023864746 ms
+Throughput: 159.23949328532805 FPS
+2020-10-31 22:01:54.329854: E tensorflow/core/platform/hadoop/hadoop_file_system.cc:132] HadoopFileSystem load error: libhdfs.so: cannot open shared object file: No such file or directory
+WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow_core/python/ops/init_ops.py:97: calling GlorotUniform.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow_core/python/ops/init_ops.py:97: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+
+BENCHMARKING TENSORFLOW MODEL models/audio_classification_layers-scaling-0.75.h5
+
+Processing data...
+Benchmarking...
+Count:      47400 iterations
+Duration:   301860.0902557373 ms
+Throughput: 157.02638914552267 FPS
+2020-10-31 22:08:05.788059: E tensorflow/core/platform/hadoop/hadoop_file_system.cc:132] HadoopFileSystem load error: libhdfs.so: cannot open shared object file: No such file or directory
+WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow_core/python/ops/init_ops.py:97: calling GlorotUniform.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow_core/python/ops/init_ops.py:97: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+WARNING:tensorflow:No training configuration found in save file: the model was *not* compiled. Compile it manually.
+
+BENCHMARKING TENSORFLOW MODEL models/audio_classification_pruning-0.5.h5
+
+Processing data...
+Benchmarking...
+Count:      28800 iterations
+Duration:   302034.8036289215 ms
+Throughput: 95.35324953935951 FPS
+2020-10-31 22:14:15.466213: E tensorflow/core/platform/hadoop/hadoop_file_system.cc:132] HadoopFileSystem load error: libhdfs.so: cannot open shared object file: No such file or directory
+WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow_core/python/ops/init_ops.py:97: calling GlorotUniform.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow_core/python/ops/init_ops.py:97: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+
+BENCHMARKING TENSORFLOW MODEL models/audio_classification_sep-conv.h5
+
+Processing data...
+Benchmarking...
+Count:      39600 iterations
+Duration:   301570.77956199646 ms
+Throughput: 131.31245692144086 FPS
+2020-10-31 22:20:27.148440: E tensorflow/core/platform/hadoop/hadoop_file_system.cc:132] HadoopFileSystem load error: libhdfs.so: cannot open shared object file: No such file or directory
+WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow_core/python/ops/init_ops.py:97: calling GlorotUniform.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow_core/python/ops/init_ops.py:97: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+WARNING:tensorflow:No training configuration found in save file: the model was *not* compiled. Compile it manually.
+
+BENCHMARKING TENSORFLOW MODEL models/audio_classification_input-scaling-0.75_layers-scaling-0.75_pruning-0.5_sep-conv.h5
+
+Processing data...
+Benchmarking...
+Count:      78600 iterations
+Duration:   301521.4879512787 ms
+Throughput: 260.67793885622035 FPS
+
+BENCHMARKING OPENVINO MYRIAD
+
+
+BENCHMARKING OPENVINO MODEL models/audio_classification.xml
+
+[Step 1/11] Parsing and validating input arguments
+[Step 2/11] Loading Inference Engine
+[ INFO ] InferenceEngine:
+         API version............. 2.1.custom_releases/2020/1_d349c3ba4a2508be72f413fa4dee92cc0e4bc0e1
+[ INFO ] Device info
+         MYRIAD
+         myriadPlugin............ version 2.1
+         Build................... 37988
+
+[Step 3/11] Reading the Intermediate Representation network
+[Step 4/11] Resizing network to match image sizes and given batch
+[ INFO ] Network batch size: 1, precision: MIXED
+[36mI: [ncAPI] [    735119] [python3] ncDeviceOpen:923	ncDeviceOpen() XLinkBootRemote is running for 1.1.2-ma2480...
+[0m
+[36mI: [ncAPI] [    735298] [python3] ncDeviceOpen:943	ncDeviceOpen() XLinkBootRemote returned success X_LINK_SUCCESS for 1.1.2-ma2480[0m
+[36mI: [xLink] [    735693] [Scheduler00Thr] eventReader:567	eventReader thread started[0m
+[36mI: [xLink] [    735693] [Scheduler00Thr] eventSchedulerRun:648	Scheduler thread started[0m
+[36mI: [ncAPI] [    735693] [python3] ncDeviceOpen:1050	XLinkConnect done - link Id 0
+[0m
+[36mI: [ncAPI] [    735693] [python3] ncDeviceOpen:1081	Booted 1.1.2-ma2480 (2.2-) -> VSC
+[0m
+[36mI: [ncAPI] [    736695] [python3] getDevAttributes:1264	Device attributes
+[0m
+[36mI: [ncAPI] [    736695] [python3] getDevAttributes:1266	Device FW version: 444c4454.2480.0.0
+[0m
+[36mI: [ncAPI] [    736695] [python3] getDevAttributes:1267	Maximum graphs: 10
+[0m
+[36mI: [ncAPI] [    736695] [python3] getDevAttributes:1268	Maximum fifos: 20
+[0m
+[36mI: [ncAPI] [    736695] [python3] getDevAttributes:1269	Device memory capacity: 507510776
+[0m
+[1;32m[Info   ][VPU][MyriadPlugin] Device #0 MYRIAD-X (USB protocol) allocated[0m
+[Step 5/11] Configuring input of the model
+[Step 6/11] Setting device configuration
+[Step 7/11] Loading the model to the device
+[Step 8/11] Setting optimal runtime parameters
+[Step 9/11] Creating infer requests and filling input blobs with images
+[ INFO ] Network input 'conv2d_input' precision FP32, dimensions (NCHW): 1 1 64 64
+[ WARNING ] No input files were given: all inputs will be filled with random values!
+[ INFO ] Infer Request 0 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 1 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 2 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 3 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[Step 10/11] Measuring performance (Start inference asyncronously, 4 inference requests, limits: 300000 ms duration)
+[Step 11/11] Dumping statistics report
+Count:      193460 iterations
+Duration:   300010.52 ms
+Latency:    5.96 ms
+Throughput: 644.84 FPS
+[36mI: [ncAPI] [    736741] [python3] ncGraphAllocate:1959	Starting Graph allocation sequence
+[0m
+[36mI: [ncAPI] [    736746] [python3] ncGraphAllocate:2045	Sent graph[0m
+[36mI: [ncAPI] [    736750] [python3] ncGraphAllocate:2167	Graph allocation completed successfully
+[0m
+[36mI: [ncAPI] [    736750] [python3] ncFifoCreate:2839	Init fifo[0m
+[36mI: [ncAPI] [    736750] [python3] ncFifoAllocate:2940	Creating fifo[0m
+[36mI: [ncAPI] [    736752] [python3] ncFifoCreate:2839	Init fifo[0m
+[36mI: [ncAPI] [    736752] [python3] ncFifoAllocate:2940	Creating fifo[0m
+[36mI: [ncAPI] [     36881] [python3] ncDeviceClose:1698	Removing device...[0m
+[36mI: [ncAPI] [     37692] [python3] destroyDeviceHandle:1640	Destroying device handler[0m
+
+BENCHMARKING OPENVINO MODEL models/audio_classification_input-scaling-0.75.xml
+
+[Step 1/11] Parsing and validating input arguments
+[Step 2/11] Loading Inference Engine
+[ INFO ] InferenceEngine:
+         API version............. 2.1.custom_releases/2020/1_d349c3ba4a2508be72f413fa4dee92cc0e4bc0e1
+[ INFO ] Device info
+         MYRIAD
+         myriadPlugin............ version 2.1
+         Build................... 37988
+
+[Step 3/11] Reading the Intermediate Representation network
+[Step 4/11] Resizing network to match image sizes and given batch
+[ INFO ] Network batch size: 1, precision: MIXED
+[36mI: [ncAPI] [     98333] [python3] ncDeviceOpen:923	ncDeviceOpen() XLinkBootRemote is running for 1.1.2-ma2480...
+[0m
+[36mI: [ncAPI] [     98512] [python3] ncDeviceOpen:943	ncDeviceOpen() XLinkBootRemote returned success X_LINK_SUCCESS for 1.1.2-ma2480[0m
+[36mI: [xLink] [     98913] [Scheduler00Thr] eventSchedulerRun:648	Scheduler thread started[0m
+[36mI: [xLink] [     98913] [EventRead00Thr] eventReader:567	eventReader thread started[0m
+[36mI: [ncAPI] [     98913] [python3] ncDeviceOpen:1050	XLinkConnect done - link Id 0
+[0m
+[36mI: [ncAPI] [     98913] [python3] ncDeviceOpen:1081	Booted 1.1.2-ma2480 (2.2-) -> VSC
+[0m
+[36mI: [ncAPI] [     99915] [python3] getDevAttributes:1264	Device attributes
+[0m
+[36mI: [ncAPI] [     99915] [python3] getDevAttributes:1266	Device FW version: 444c4454.2480.0.0
+[0m
+[36mI: [ncAPI] [     99915] [python3] getDevAttributes:1267	Maximum graphs: 10
+[0m
+[36mI: [ncAPI] [     99915] [python3] getDevAttributes:1268	Maximum fifos: 20
+[0m
+[36mI: [ncAPI] [     99915] [python3] getDevAttributes:1269	Device memory capacity: 507510776
+[0m
+[1;32m[Info   ][VPU][MyriadPlugin] Device #0 MYRIAD-X (USB protocol) allocated[0m
+[Step 5/11] Configuring input of the model
+[Step 6/11] Setting device configuration
+[Step 7/11] Loading the model to the device
+[Step 8/11] Setting optimal runtime parameters
+[Step 9/11] Creating infer requests and filling input blobs with images
+[ INFO ] Network input 'conv2d_input' precision FP32, dimensions (NCHW): 1 1 48 48
+[ WARNING ] No input files were given: all inputs will be filled with random values!
+[ INFO ] Infer Request 0 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 1 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 2 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 3 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[Step 10/11] Measuring performance (Start inference asyncronously, 4 inference requests, limits: 300000 ms duration)
+[Step 11/11] Dumping statistics report
+Count:      204700 iterations
+Duration:   300012.03 ms
+Latency:    5.65 ms
+Throughput: 682.31 FPS
+[36mI: [ncAPI] [     99952] [python3] ncGraphAllocate:1959	Starting Graph allocation sequence
+[0m
+[36mI: [ncAPI] [     99957] [python3] ncGraphAllocate:2045	Sent graph[0m
+[36mI: [ncAPI] [     99961] [python3] ncGraphAllocate:2167	Graph allocation completed successfully
+[0m
+[36mI: [ncAPI] [     99961] [python3] ncFifoCreate:2839	Init fifo[0m
+[36mI: [ncAPI] [     99961] [python3] ncFifoAllocate:2940	Creating fifo[0m
+[36mI: [ncAPI] [     99963] [python3] ncFifoCreate:2839	Init fifo[0m
+[36mI: [ncAPI] [     99963] [python3] ncFifoAllocate:2940	Creating fifo[0m
+[36mI: [ncAPI] [    400108] [python3] ncDeviceClose:1698	Removing device...[0m
+[36mI: [ncAPI] [    400923] [python3] destroyDeviceHandle:1640	Destroying device handler[0m
+
+BENCHMARKING OPENVINO MODEL models/audio_classification_layers-scaling-0.75.xml
+
+[Step 1/11] Parsing and validating input arguments
+[Step 2/11] Loading Inference Engine
+[ INFO ] InferenceEngine:
+         API version............. 2.1.custom_releases/2020/1_d349c3ba4a2508be72f413fa4dee92cc0e4bc0e1
+[ INFO ] Device info
+         MYRIAD
+         myriadPlugin............ version 2.1
+         Build................... 37988
+
+[Step 3/11] Reading the Intermediate Representation network
+[Step 4/11] Resizing network to match image sizes and given batch
+[ INFO ] Network batch size: 1, precision: MIXED
+[36mI: [ncAPI] [    461568] [python3] ncDeviceOpen:923	ncDeviceOpen() XLinkBootRemote is running for 1.1.2-ma2480...
+[0m
+[36mI: [ncAPI] [    461747] [python3] ncDeviceOpen:943	ncDeviceOpen() XLinkBootRemote returned success X_LINK_SUCCESS for 1.1.2-ma2480[0m
+[36mI: [xLink] [    462143] [Scheduler00Thr] eventReader:567	eventReader thread started[0m
+[36mI: [xLink] [    462143] [Scheduler00Thr] eventSchedulerRun:648	Scheduler thread started[0m
+[36mI: [ncAPI] [    462144] [python3] ncDeviceOpen:1050	XLinkConnect done - link Id 0
+[0m
+[36mI: [ncAPI] [    462144] [python3] ncDeviceOpen:1081	Booted 1.1.2-ma2480 (2.2-) -> VSC
+[0m
+[36mI: [ncAPI] [    463145] [python3] getDevAttributes:1264	Device attributes
+[0m
+[36mI: [ncAPI] [    463145] [python3] getDevAttributes:1266	Device FW version: 444c4454.2480.0.0
+[0m
+[36mI: [ncAPI] [    463145] [python3] getDevAttributes:1267	Maximum graphs: 10
+[0m
+[36mI: [ncAPI] [    463145] [python3] getDevAttributes:1268	Maximum fifos: 20
+[0m
+[36mI: [ncAPI] [    463145] [python3] getDevAttributes:1269	Device memory capacity: 507510776
+[0m
+[1;32m[Info   ][VPU][MyriadPlugin] Device #0 MYRIAD-X (USB protocol) allocated[0m
+[Step 5/11] Configuring input of the model
+[Step 6/11] Setting device configuration
+[Step 7/11] Loading the model to the device
+[Step 8/11] Setting optimal runtime parameters
+[Step 9/11] Creating infer requests and filling input blobs with images
+[ INFO ] Network input 'conv2d_input' precision FP32, dimensions (NCHW): 1 1 64 64
+[ WARNING ] No input files were given: all inputs will be filled with random values!
+[ INFO ] Infer Request 0 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 1 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 2 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 3 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[Step 10/11] Measuring performance (Start inference asyncronously, 4 inference requests, limits: 300000 ms duration)
+[Step 11/11] Dumping statistics report
+Count:      194340 iterations
+Duration:   300014.37 ms
+Latency:    6.09 ms
+Throughput: 647.77 FPS
+[36mI: [ncAPI] [    463182] [python3] ncGraphAllocate:1959	Starting Graph allocation sequence
+[0m
+[36mI: [ncAPI] [    463186] [python3] ncGraphAllocate:2045	Sent graph[0m
+[36mI: [ncAPI] [    463191] [python3] ncGraphAllocate:2167	Graph allocation completed successfully
+[0m
+[36mI: [ncAPI] [    463191] [python3] ncFifoCreate:2839	Init fifo[0m
+[36mI: [ncAPI] [    463191] [python3] ncFifoAllocate:2940	Creating fifo[0m
+[36mI: [ncAPI] [    463193] [python3] ncFifoCreate:2839	Init fifo[0m
+[36mI: [ncAPI] [    463193] [python3] ncFifoAllocate:2940	Creating fifo[0m
+[36mI: [ncAPI] [    763334] [python3] ncDeviceClose:1698	Removing device...[0m
+[36mI: [ncAPI] [    764152] [python3] destroyDeviceHandle:1640	Destroying device handler[0m
+
+BENCHMARKING OPENVINO MODEL models/audio_classification_pruning-0.5.xml
+
+[Step 1/11] Parsing and validating input arguments
+[Step 2/11] Loading Inference Engine
+[ INFO ] InferenceEngine:
+         API version............. 2.1.custom_releases/2020/1_d349c3ba4a2508be72f413fa4dee92cc0e4bc0e1
+[ INFO ] Device info
+         MYRIAD
+         myriadPlugin............ version 2.1
+         Build................... 37988
+
+[Step 3/11] Reading the Intermediate Representation network
+[Step 4/11] Resizing network to match image sizes and given batch
+[ INFO ] Network batch size: 1, precision: MIXED
+[36mI: [ncAPI] [    824785] [python3] ncDeviceOpen:923	ncDeviceOpen() XLinkBootRemote is running for 1.1.2-ma2480...
+[0m
+[36mI: [ncAPI] [    824964] [python3] ncDeviceOpen:943	ncDeviceOpen() XLinkBootRemote returned success X_LINK_SUCCESS for 1.1.2-ma2480[0m
+[36mI: [xLink] [    825363] [Scheduler00Thr] eventReader:567	eventReader thread started[0m
+[36mI: [xLink] [    825363] [Scheduler00Thr] eventSchedulerRun:648	Scheduler thread started[0m
+[36mI: [ncAPI] [    825363] [python3] ncDeviceOpen:1050	XLinkConnect done - link Id 0
+[0m
+[36mI: [ncAPI] [    825363] [python3] ncDeviceOpen:1081	Booted 1.1.2-ma2480 (2.2-) -> VSC
+[0m
+[36mI: [ncAPI] [    826365] [python3] getDevAttributes:1264	Device attributes
+[0m
+[36mI: [ncAPI] [    826365] [python3] getDevAttributes:1266	Device FW version: 444c4454.2480.0.0
+[0m
+[36mI: [ncAPI] [    826365] [python3] getDevAttributes:1267	Maximum graphs: 10
+[0m
+[36mI: [ncAPI] [    826365] [python3] getDevAttributes:1268	Maximum fifos: 20
+[0m
+[36mI: [ncAPI] [    826365] [python3] getDevAttributes:1269	Device memory capacity: 507510776
+[0m
+[1;32m[Info   ][VPU][MyriadPlugin] Device #0 MYRIAD-X (USB protocol) allocated[0m
+[Step 5/11] Configuring input of the model
+[Step 6/11] Setting device configuration
+[Step 7/11] Loading the model to the device
+[Step 8/11] Setting optimal runtime parameters
+[Step 9/11] Creating infer requests and filling input blobs with images
+[ INFO ] Network input 'conv2d_input' precision FP32, dimensions (NCHW): 1 1 64 64
+[ WARNING ] No input files were given: all inputs will be filled with random values!
+[ INFO ] Infer Request 0 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 1 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 2 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 3 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[Step 10/11] Measuring performance (Start inference asyncronously, 4 inference requests, limits: 300000 ms duration)
+[Step 11/11] Dumping statistics report
+Count:      196136 iterations
+Duration:   300013.35 ms
+Latency:    5.82 ms
+Throughput: 653.76 FPS
+[36mI: [ncAPI] [    826413] [python3] ncGraphAllocate:1959	Starting Graph allocation sequence
+[0m
+[36mI: [ncAPI] [    826418] [python3] ncGraphAllocate:2045	Sent graph[0m
+[36mI: [ncAPI] [    826423] [python3] ncGraphAllocate:2167	Graph allocation completed successfully
+[0m
+[36mI: [ncAPI] [    826423] [python3] ncFifoCreate:2839	Init fifo[0m
+[36mI: [ncAPI] [    826423] [python3] ncFifoAllocate:2940	Creating fifo[0m
+[36mI: [ncAPI] [    826425] [python3] ncFifoCreate:2839	Init fifo[0m
+[36mI: [ncAPI] [    826425] [python3] ncFifoAllocate:2940	Creating fifo[0m
+[36mI: [ncAPI] [    126587] [python3] ncDeviceClose:1698	Removing device...[0m
+[36mI: [ncAPI] [    127402] [python3] destroyDeviceHandle:1640	Destroying device handler[0m
+
+BENCHMARKING OPENVINO MODEL models/audio_classification_sep-conv.xml
+
+[Step 1/11] Parsing and validating input arguments
+[Step 2/11] Loading Inference Engine
+[ INFO ] InferenceEngine:
+         API version............. 2.1.custom_releases/2020/1_d349c3ba4a2508be72f413fa4dee92cc0e4bc0e1
+[ INFO ] Device info
+         MYRIAD
+         myriadPlugin............ version 2.1
+         Build................... 37988
+
+[Step 3/11] Reading the Intermediate Representation network
+[Step 4/11] Resizing network to match image sizes and given batch
+[ INFO ] Network batch size: 1, precision: MIXED
+[36mI: [ncAPI] [    188046] [python3] ncDeviceOpen:923	ncDeviceOpen() XLinkBootRemote is running for 1.1.2-ma2480...
+[0m
+[36mI: [ncAPI] [    188225] [python3] ncDeviceOpen:943	ncDeviceOpen() XLinkBootRemote returned success X_LINK_SUCCESS for 1.1.2-ma2480[0m
+[36mI: [xLink] [    188617] [Scheduler00Thr] eventReader:567	eventReader thread started[0m
+[36mI: [xLink] [    188617] [Scheduler00Thr] eventSchedulerRun:648	Scheduler thread started[0m
+[36mI: [ncAPI] [    188620] [python3] ncDeviceOpen:1050	XLinkConnect done - link Id 0
+[0m
+[36mI: [ncAPI] [    188620] [python3] ncDeviceOpen:1081	Booted 1.1.2-ma2480 (2.2-) -> VSC
+[0m
+[36mI: [ncAPI] [    189622] [python3] getDevAttributes:1264	Device attributes
+[0m
+[36mI: [ncAPI] [    189622] [python3] getDevAttributes:1266	Device FW version: 444c4454.2480.0.0
+[0m
+[36mI: [ncAPI] [    189622] [python3] getDevAttributes:1267	Maximum graphs: 10
+[0m
+[36mI: [ncAPI] [    189622] [python3] getDevAttributes:1268	Maximum fifos: 20
+[0m
+[36mI: [ncAPI] [    189622] [python3] getDevAttributes:1269	Device memory capacity: 507510776
+[0m
+[1;32m[Info   ][VPU][MyriadPlugin] Device #0 MYRIAD-X (USB protocol) allocated[0m
+[Step 5/11] Configuring input of the model
+[Step 6/11] Setting device configuration
+[Step 7/11] Loading the model to the device
+[Step 8/11] Setting optimal runtime parameters
+[Step 9/11] Creating infer requests and filling input blobs with images
+[ INFO ] Network input 'separable_conv2d_input' precision FP32, dimensions (NCHW): 1 1 64 64
+[ WARNING ] No input files were given: all inputs will be filled with random values!
+[ INFO ] Infer Request 0 filling
+[ INFO ] Fill input 'separable_conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 1 filling
+[ INFO ] Fill input 'separable_conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 2 filling
+[ INFO ] Fill input 'separable_conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 3 filling
+[ INFO ] Fill input 'separable_conv2d_input' with random values (some binary data is expected)
+[Step 10/11] Measuring performance (Start inference asyncronously, 4 inference requests, limits: 300000 ms duration)
+[Step 11/11] Dumping statistics report
+Count:      180504 iterations
+Duration:   300013.98 ms
+Latency:    6.45 ms
+Throughput: 601.65 FPS
+[36mI: [ncAPI] [    189701] [python3] ncGraphAllocate:1959	Starting Graph allocation sequence
+[0m
+[36mI: [ncAPI] [    189707] [python3] ncGraphAllocate:2045	Sent graph[0m
+[36mI: [ncAPI] [    189712] [python3] ncGraphAllocate:2167	Graph allocation completed successfully
+[0m
+[36mI: [ncAPI] [    189712] [python3] ncFifoCreate:2839	Init fifo[0m
+[36mI: [ncAPI] [    189712] [python3] ncFifoAllocate:2940	Creating fifo[0m
+[36mI: [ncAPI] [    189714] [python3] ncFifoCreate:2839	Init fifo[0m
+[36mI: [ncAPI] [    189714] [python3] ncFifoAllocate:2940	Creating fifo[0m
+[36mI: [ncAPI] [    489883] [python3] ncDeviceClose:1698	Removing device...[0m
+[36mI: [ncAPI] [    490702] [python3] destroyDeviceHandle:1640	Destroying device handler[0m
+
+BENCHMARKING OPENVINO MODEL models/audio_classification_input-scaling-0.75_layers-scaling-0.75_pruning-0.5_sep-conv.xml
+
+[Step 1/11] Parsing and validating input arguments
+[Step 2/11] Loading Inference Engine
+[ INFO ] InferenceEngine:
+         API version............. 2.1.custom_releases/2020/1_d349c3ba4a2508be72f413fa4dee92cc0e4bc0e1
+[ INFO ] Device info
+         MYRIAD
+         myriadPlugin............ version 2.1
+         Build................... 37988
+
+[Step 3/11] Reading the Intermediate Representation network
+[Step 4/11] Resizing network to match image sizes and given batch
+[ INFO ] Network batch size: 1, precision: MIXED
+[36mI: [ncAPI] [    551338] [python3] ncDeviceOpen:923	ncDeviceOpen() XLinkBootRemote is running for 1.1.2-ma2480...
+[0m
+[36mI: [ncAPI] [    551517] [python3] ncDeviceOpen:943	ncDeviceOpen() XLinkBootRemote returned success X_LINK_SUCCESS for 1.1.2-ma2480[0m
+[36mI: [xLink] [    551918] [Scheduler00Thr] eventReader:567	eventReader thread started[0m
+[36mI: [xLink] [    551918] [Scheduler00Thr] eventSchedulerRun:648	Scheduler thread started[0m
+[36mI: [ncAPI] [    551918] [python3] ncDeviceOpen:1050	XLinkConnect done - link Id 0
+[0m
+[36mI: [ncAPI] [    551918] [python3] ncDeviceOpen:1081	Booted 1.1.2-ma2480 (2.2-) -> VSC
+[0m
+[36mI: [ncAPI] [    552920] [python3] getDevAttributes:1264	Device attributes
+[0m
+[36mI: [ncAPI] [    552920] [python3] getDevAttributes:1266	Device FW version: 444c4454.2480.0.0
+[0m
+[36mI: [ncAPI] [    552920] [python3] getDevAttributes:1267	Maximum graphs: 10
+[0m
+[36mI: [ncAPI] [    552920] [python3] getDevAttributes:1268	Maximum fifos: 20
+[0m
+[36mI: [ncAPI] [    552920] [python3] getDevAttributes:1269	Device memory capacity: 507510776
+[0m
+[1;32m[Info   ][VPU][MyriadPlugin] Device #0 MYRIAD-X (USB protocol) allocated[0m
+[Step 5/11] Configuring input of the model
+[Step 6/11] Setting device configuration
+[Step 7/11] Loading the model to the device
+[Step 8/11] Setting optimal runtime parameters
+[Step 9/11] Creating infer requests and filling input blobs with images
+[ INFO ] Network input 'separable_conv2d_input' precision FP32, dimensions (NCHW): 1 1 48 48
+[ WARNING ] No input files were given: all inputs will be filled with random values!
+[ INFO ] Infer Request 0 filling
+[ INFO ] Fill input 'separable_conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 1 filling
+[ INFO ] Fill input 'separable_conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 2 filling
+[ INFO ] Fill input 'separable_conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 3 filling
+[ INFO ] Fill input 'separable_conv2d_input' with random values (some binary data is expected)
+[Step 10/11] Measuring performance (Start inference asyncronously, 4 inference requests, limits: 300000 ms duration)
+[Step 11/11] Dumping statistics report
+Count:      173232 iterations
+Duration:   300014.63 ms
+Latency:    6.72 ms
+Throughput: 577.41 FPS
+[36mI: [ncAPI] [    552989] [python3] ncGraphAllocate:1959	Starting Graph allocation sequence
+[0m
+[36mI: [ncAPI] [    552993] [python3] ncGraphAllocate:2045	Sent graph[0m
+[36mI: [ncAPI] [    552998] [python3] ncGraphAllocate:2167	Graph allocation completed successfully
+[0m
+[36mI: [ncAPI] [    552998] [python3] ncFifoCreate:2839	Init fifo[0m
+[36mI: [ncAPI] [    552998] [python3] ncFifoAllocate:2940	Creating fifo[0m
+[36mI: [ncAPI] [    553000] [python3] ncFifoCreate:2839	Init fifo[0m
+[36mI: [ncAPI] [    553000] [python3] ncFifoAllocate:2940	Creating fifo[0m
+[36mI: [ncAPI] [    853139] [python3] ncDeviceClose:1698	Removing device...[0m
+[36mI: [ncAPI] [    853952] [python3] destroyDeviceHandle:1640	Destroying device handler[0m
+2020-11-01 10:44:31.765190: E tensorflow/core/platform/hadoop/hadoop_file_system.cc:132] HadoopFileSystem load error: libhdfs.so: cannot open shared object file: No such file or directory
+2020-11-01 10:44:42.747445: E tensorflow/core/platform/hadoop/hadoop_file_system.cc:132] HadoopFileSystem load error: libhdfs.so: cannot open shared object file: No such file or directory
+WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow_core/python/ops/init_ops.py:97: calling GlorotUniform.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow_core/python/ops/init_ops.py:97: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+WARNING:tensorflow:No training configuration found in save file: the model was *not* compiled. Compile it manually.
+
+BENCHMARKING TENSORFLOW MODEL models/audio_classification_input-scaling-0.75_layers-scaling-0.75_pruning-0.5.h5
+
+Processing data...
+Benchmarking...
+Count:      90000 iterations
+Duration:   301952.82101631165 ms
+Throughput: 298.0598084729871 FPS
+[Step 1/11] Parsing and validating input arguments
+[ WARNING ]  -nstreams default value is determined automatically for a device. Although the automatic selection usually provides a reasonable performance, but it still may be non-optimal for some cases, for more information look at README. 
+[Step 2/11] Loading Inference Engine
+[ INFO ] InferenceEngine:
+         API version............. 2.1.custom_releases/2020/1_d349c3ba4a2508be72f413fa4dee92cc0e4bc0e1
+[ INFO ] Device info
+         MYRIAD
+         myriadPlugin............ version 2.1
+         Build................... 37988
+
+[Step 3/11] Reading the Intermediate Representation network
+[Step 4/11] Resizing network to match image sizes and given batch
+[ INFO ] Network batch size: 1, precision: MIXED
+[36mI: [ncAPI] [    391235] [python3] ncDeviceOpen:923	ncDeviceOpen() XLinkBootRemote is running for 1.1.2-ma2480...
+[0m
+[36mI: [ncAPI] [    391413] [python3] ncDeviceOpen:943	ncDeviceOpen() XLinkBootRemote returned success X_LINK_SUCCESS for 1.1.2-ma2480[0m
+[36mI: [xLink] [    391803] [Scheduler00Thr] eventReader:567	eventReader thread started[0m
+[36mI: [xLink] [    391803] [Scheduler00Thr] eventSchedulerRun:648	Scheduler thread started[0m
+[36mI: [ncAPI] [    391803] [python3] ncDeviceOpen:1050	XLinkConnect done - link Id 0
+[0m
+[36mI: [ncAPI] [    391803] [python3] ncDeviceOpen:1081	Booted 1.1.2-ma2480 (2.2-) -> VSC
+[0m
+[36mI: [ncAPI] [    392805] [python3] getDevAttributes:1264	Device attributes
+[0m
+[36mI: [ncAPI] [    392805] [python3] getDevAttributes:1266	Device FW version: 444c4454.2480.0.0
+[0m
+[36mI: [ncAPI] [    392805] [python3] getDevAttributes:1267	Maximum graphs: 10
+[0m
+[36mI: [ncAPI] [    392805] [python3] getDevAttributes:1268	Maximum fifos: 20
+[0m
+[36mI: [ncAPI] [    392805] [python3] getDevAttributes:1269	Device memory capacity: 507510776
+[0m
+[1;32m[Info   ][VPU][MyriadPlugin] Device #0 MYRIAD-X (USB protocol) allocated[0m
+[Step 5/11] Configuring input of the model
+[Step 6/11] Setting device configuration
+[Step 7/11] Loading the model to the device
+[Step 8/11] Setting optimal runtime parameters
+[Step 9/11] Creating infer requests and filling input blobs with images
+[ INFO ] Network input 'conv2d_input' precision FP32, dimensions (NCHW): 1 1 48 48
+[ WARNING ] No input files were given: all inputs will be filled with random values!
+[ INFO ] Infer Request 0 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 1 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 2 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 3 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 4 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 5 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 6 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 7 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+/home/pi/openvino/inference-engine/tools/benchmark_tool/benchmark_app.py:21: DeprecationWarning: The 'warn' method is deprecated, use 'warning' instead
+  logger.warn(" -nstreams default value is determined automatically for a device. "
+[Step 10/11] Measuring performance (Start inference asyncronously, 8 inference requests, limits: 300000 ms duration)
+[Step 11/11] Dumping statistics report
+Count:      203248 iterations
+Duration:   300015.69 ms
+Latency:    11.51 ms
+Throughput: 677.46 FPS
+[36mI: [ncAPI] [    392837] [python3] ncGraphAllocate:1959	Starting Graph allocation sequence
+[0m
+[36mI: [ncAPI] [    392841] [python3] ncGraphAllocate:2045	Sent graph[0m
+[36mI: [ncAPI] [    392846] [python3] ncGraphAllocate:2167	Graph allocation completed successfully
+[0m
+[36mI: [ncAPI] [    392846] [python3] ncFifoCreate:2839	Init fifo[0m
+[36mI: [ncAPI] [    392846] [python3] ncFifoAllocate:2940	Creating fifo[0m
+[36mI: [ncAPI] [    392848] [python3] ncFifoCreate:2839	Init fifo[0m
+[36mI: [ncAPI] [    392848] [python3] ncFifoAllocate:2940	Creating fifo[0m
+[36mI: [ncAPI] [    692986] [python3] ncDeviceClose:1698	Removing device...[0m
+[36mI: [ncAPI] [    693802] [python3] destroyDeviceHandle:1640	Destroying device handler[0m
+
+BENCHMARKING OPENVINO MODEL models/audio_classification.xml
+
+[Step 1/11] Parsing and validating input arguments
+[ WARNING ]  -nstreams default value is determined automatically for a device. Although the automatic selection usually provides a reasonable performance, but it still may be non-optimal for some cases, for more information look at README. 
+[Step 2/11] Loading Inference Engine
+[ INFO ] InferenceEngine:
+         API version............. 2.1.custom_releases/2020/1_d349c3ba4a2508be72f413fa4dee92cc0e4bc0e1
+[ INFO ] Device info
+         MYRIAD
+         myriadPlugin............ version 2.1
+         Build................... 37988
+
+[Step 3/11] Reading the Intermediate Representation network
+[Step 4/11] Resizing network to match image sizes and given batch
+[ INFO ] Network batch size: 1, precision: MIXED
+[36mI: [ncAPI] [    967138] [python3] ncDeviceOpen:923	ncDeviceOpen() XLinkBootRemote is running for 1.1.2-ma2480...
+[0m
+[36mI: [ncAPI] [    967317] [python3] ncDeviceOpen:943	ncDeviceOpen() XLinkBootRemote returned success X_LINK_SUCCESS for 1.1.2-ma2480[0m
+[36mI: [xLink] [    967703] [Scheduler00Thr] eventSchedulerRun:648	Scheduler thread started[0m
+[36mI: [xLink] [    967703] [EventRead00Thr] eventReader:567	eventReader thread started[0m
+[36mI: [ncAPI] [    967703] [python3] ncDeviceOpen:1050	XLinkConnect done - link Id 0
+[0m
+[36mI: [ncAPI] [    967703] [python3] ncDeviceOpen:1081	Booted 1.1.2-ma2480 (2.2-) -> VSC
+[0m
+[36mI: [ncAPI] [    968705] [python3] getDevAttributes:1264	Device attributes
+[0m
+[36mI: [ncAPI] [    968705] [python3] getDevAttributes:1266	Device FW version: 444c4454.2480.0.0
+[0m
+[36mI: [ncAPI] [    968705] [python3] getDevAttributes:1267	Maximum graphs: 10
+[0m
+[36mI: [ncAPI] [    968705] [python3] getDevAttributes:1268	Maximum fifos: 20
+[0m
+[36mI: [ncAPI] [    968705] [python3] getDevAttributes:1269	Device memory capacity: 507510776
+[0m
+[1;32m[Info   ][VPU][MyriadPlugin] Device #0 MYRIAD-X (USB protocol) allocated[0m
+[Step 5/11] Configuring input of the model
+[Step 6/11] Setting device configuration
+[Step 7/11] Loading the model to the device
+[Step 8/11] Setting optimal runtime parameters
+[Step 9/11] Creating infer requests and filling input blobs with images
+[ INFO ] Network input 'conv2d_input' precision FP32, dimensions (NCHW): 1 1 64 64
+[ WARNING ] No input files were given: all inputs will be filled with random values!
+[ INFO ] Infer Request 0 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 1 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 2 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 3 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 4 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 5 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 6 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 7 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+/home/pi/openvino/inference-engine/tools/benchmark_tool/benchmark_app.py:21: DeprecationWarning: The 'warn' method is deprecated, use 'warning' instead
+  logger.warn(" -nstreams default value is determined automatically for a device. "
+[Step 10/11] Measuring performance (Start inference asyncronously, 8 inference requests, limits: 300000 ms duration)
+[Step 11/11] Dumping statistics report
+Count:      195976 iterations
+Duration:   300016.63 ms
+Latency:    11.72 ms
+Throughput: 653.22 FPS
+[36mI: [ncAPI] [    968751] [python3] ncGraphAllocate:1959	Starting Graph allocation sequence
+[0m
+[36mI: [ncAPI] [    968756] [python3] ncGraphAllocate:2045	Sent graph[0m
+[36mI: [ncAPI] [    968760] [python3] ncGraphAllocate:2167	Graph allocation completed successfully
+[0m
+[36mI: [ncAPI] [    968761] [python3] ncFifoCreate:2839	Init fifo[0m
+[36mI: [ncAPI] [    968761] [python3] ncFifoAllocate:2940	Creating fifo[0m
+[36mI: [ncAPI] [    968762] [python3] ncFifoCreate:2839	Init fifo[0m
+[36mI: [ncAPI] [    968762] [python3] ncFifoAllocate:2940	Creating fifo[0m
+[36mI: [ncAPI] [    268940] [python3] ncDeviceClose:1698	Removing device...[0m
+[36mI: [ncAPI] [    269752] [python3] destroyDeviceHandle:1640	Destroying device handler[0m
+
+BENCHMARKING OPENVINO MODEL models/audio_classification_input-scaling-0.75.xml
+
+[Step 1/11] Parsing and validating input arguments
+[ WARNING ]  -nstreams default value is determined automatically for a device. Although the automatic selection usually provides a reasonable performance, but it still may be non-optimal for some cases, for more information look at README. 
+[Step 2/11] Loading Inference Engine
+[ INFO ] InferenceEngine:
+         API version............. 2.1.custom_releases/2020/1_d349c3ba4a2508be72f413fa4dee92cc0e4bc0e1
+[ INFO ] Device info
+         MYRIAD
+         myriadPlugin............ version 2.1
+         Build................... 37988
+
+[Step 3/11] Reading the Intermediate Representation network
+[Step 4/11] Resizing network to match image sizes and given batch
+[ INFO ] Network batch size: 1, precision: MIXED
+[36mI: [ncAPI] [    330393] [python3] ncDeviceOpen:923	ncDeviceOpen() XLinkBootRemote is running for 1.1.2-ma2480...
+[0m
+[36mI: [ncAPI] [    330572] [python3] ncDeviceOpen:943	ncDeviceOpen() XLinkBootRemote returned success X_LINK_SUCCESS for 1.1.2-ma2480[0m
+[36mI: [xLink] [    330968] [Scheduler00Thr] eventSchedulerRun:648	Scheduler thread started[0m
+[36mI: [xLink] [    330968] [EventRead00Thr] eventReader:567	eventReader thread started[0m
+[36mI: [ncAPI] [    330968] [python3] ncDeviceOpen:1050	XLinkConnect done - link Id 0
+[0m
+[36mI: [ncAPI] [    330968] [python3] ncDeviceOpen:1081	Booted 1.1.2-ma2480 (2.2-) -> VSC
+[0m
+[36mI: [ncAPI] [    331970] [python3] getDevAttributes:1264	Device attributes
+[0m
+[36mI: [ncAPI] [    331970] [python3] getDevAttributes:1266	Device FW version: 444c4454.2480.0.0
+[0m
+[36mI: [ncAPI] [    331970] [python3] getDevAttributes:1267	Maximum graphs: 10
+[0m
+[36mI: [ncAPI] [    331970] [python3] getDevAttributes:1268	Maximum fifos: 20
+[0m
+[36mI: [ncAPI] [    331970] [python3] getDevAttributes:1269	Device memory capacity: 507510776
+[0m
+[1;32m[Info   ][VPU][MyriadPlugin] Device #0 MYRIAD-X (USB protocol) allocated[0m
+[Step 5/11] Configuring input of the model
+[Step 6/11] Setting device configuration
+[Step 7/11] Loading the model to the device
+[Step 8/11] Setting optimal runtime parameters
+[Step 9/11] Creating infer requests and filling input blobs with images
+[ INFO ] Network input 'conv2d_input' precision FP32, dimensions (NCHW): 1 1 48 48
+[ WARNING ] No input files were given: all inputs will be filled with random values!
+[ INFO ] Infer Request 0 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 1 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 2 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 3 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 4 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 5 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 6 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 7 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+/home/pi/openvino/inference-engine/tools/benchmark_tool/benchmark_app.py:21: DeprecationWarning: The 'warn' method is deprecated, use 'warning' instead
+  logger.warn(" -nstreams default value is determined automatically for a device. "
+[Step 10/11] Measuring performance (Start inference asyncronously, 8 inference requests, limits: 300000 ms duration)
+[Step 11/11] Dumping statistics report
+Count:      200952 iterations
+Duration:   300020.66 ms
+Latency:    11.78 ms
+Throughput: 669.79 FPS
+[36mI: [ncAPI] [    332006] [python3] ncGraphAllocate:1959	Starting Graph allocation sequence
+[0m
+[36mI: [ncAPI] [    332010] [python3] ncGraphAllocate:2045	Sent graph[0m
+[36mI: [ncAPI] [    332015] [python3] ncGraphAllocate:2167	Graph allocation completed successfully
+[0m
+[36mI: [ncAPI] [    332015] [python3] ncFifoCreate:2839	Init fifo[0m
+[36mI: [ncAPI] [    332015] [python3] ncFifoAllocate:2940	Creating fifo[0m
+[36mI: [ncAPI] [    332017] [python3] ncFifoCreate:2839	Init fifo[0m
+[36mI: [ncAPI] [    332017] [python3] ncFifoAllocate:2940	Creating fifo[0m
+[36mI: [ncAPI] [    632161] [python3] ncDeviceClose:1698	Removing device...[0m
+[36mI: [ncAPI] [    632972] [python3] destroyDeviceHandle:1640	Destroying device handler[0m
+
+BENCHMARKING OPENVINO MODEL models/audio_classification_layers-scaling-0.75.xml
+
+[Step 1/11] Parsing and validating input arguments
+[ WARNING ]  -nstreams default value is determined automatically for a device. Although the automatic selection usually provides a reasonable performance, but it still may be non-optimal for some cases, for more information look at README. 
+[Step 2/11] Loading Inference Engine
+[ INFO ] InferenceEngine:
+         API version............. 2.1.custom_releases/2020/1_d349c3ba4a2508be72f413fa4dee92cc0e4bc0e1
+[ INFO ] Device info
+         MYRIAD
+         myriadPlugin............ version 2.1
+         Build................... 37988
+
+[Step 3/11] Reading the Intermediate Representation network
+[Step 4/11] Resizing network to match image sizes and given batch
+[ INFO ] Network batch size: 1, precision: MIXED
+[36mI: [ncAPI] [    693612] [python3] ncDeviceOpen:923	ncDeviceOpen() XLinkBootRemote is running for 1.1.2-ma2480...
+[0m
+[36mI: [ncAPI] [    693790] [python3] ncDeviceOpen:943	ncDeviceOpen() XLinkBootRemote returned success X_LINK_SUCCESS for 1.1.2-ma2480[0m
+[36mI: [xLink] [    694193] [Scheduler00Thr] eventSchedulerRun:648	Scheduler thread started[0m
+[36mI: [xLink] [    694193] [EventRead00Thr] eventReader:567	eventReader thread started[0m
+[36mI: [ncAPI] [    694193] [python3] ncDeviceOpen:1050	XLinkConnect done - link Id 0
+[0m
+[36mI: [ncAPI] [    694193] [python3] ncDeviceOpen:1081	Booted 1.1.2-ma2480 (2.2-) -> VSC
+[0m
+[36mI: [ncAPI] [    695195] [python3] getDevAttributes:1264	Device attributes
+[0m
+[36mI: [ncAPI] [    695195] [python3] getDevAttributes:1266	Device FW version: 444c4454.2480.0.0
+[0m
+[36mI: [ncAPI] [    695195] [python3] getDevAttributes:1267	Maximum graphs: 10
+[0m
+[36mI: [ncAPI] [    695195] [python3] getDevAttributes:1268	Maximum fifos: 20
+[0m
+[36mI: [ncAPI] [    695195] [python3] getDevAttributes:1269	Device memory capacity: 507510776
+[0m
+[1;32m[Info   ][VPU][MyriadPlugin] Device #0 MYRIAD-X (USB protocol) allocated[0m
+[Step 5/11] Configuring input of the model
+[Step 6/11] Setting device configuration
+[Step 7/11] Loading the model to the device
+[Step 8/11] Setting optimal runtime parameters
+[Step 9/11] Creating infer requests and filling input blobs with images
+[ INFO ] Network input 'conv2d_input' precision FP32, dimensions (NCHW): 1 1 64 64
+[ WARNING ] No input files were given: all inputs will be filled with random values!
+[ INFO ] Infer Request 0 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 1 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 2 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 3 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 4 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 5 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 6 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 7 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+/home/pi/openvino/inference-engine/tools/benchmark_tool/benchmark_app.py:21: DeprecationWarning: The 'warn' method is deprecated, use 'warning' instead
+  logger.warn(" -nstreams default value is determined automatically for a device. "
+[Step 10/11] Measuring performance (Start inference asyncronously, 8 inference requests, limits: 300000 ms duration)
+[Step 11/11] Dumping statistics report
+Count:      199192 iterations
+Duration:   300019.03 ms
+Latency:    11.81 ms
+Throughput: 663.93 FPS
+[36mI: [ncAPI] [    695231] [python3] ncGraphAllocate:1959	Starting Graph allocation sequence
+[0m
+[36mI: [ncAPI] [    695235] [python3] ncGraphAllocate:2045	Sent graph[0m
+[36mI: [ncAPI] [    695240] [python3] ncGraphAllocate:2167	Graph allocation completed successfully
+[0m
+[36mI: [ncAPI] [    695240] [python3] ncFifoCreate:2839	Init fifo[0m
+[36mI: [ncAPI] [    695240] [python3] ncFifoAllocate:2940	Creating fifo[0m
+[36mI: [ncAPI] [    695242] [python3] ncFifoCreate:2839	Init fifo[0m
+[36mI: [ncAPI] [    695242] [python3] ncFifoAllocate:2940	Creating fifo[0m
+[36mI: [ncAPI] [    995400] [python3] ncDeviceClose:1698	Removing device...[0m
+[36mI: [ncAPI] [    996212] [python3] destroyDeviceHandle:1640	Destroying device handler[0m
+
+BENCHMARKING OPENVINO MODEL models/audio_classification_pruning-0.5.xml
+
+[Step 1/11] Parsing and validating input arguments
+[ WARNING ]  -nstreams default value is determined automatically for a device. Although the automatic selection usually provides a reasonable performance, but it still may be non-optimal for some cases, for more information look at README. 
+[Step 2/11] Loading Inference Engine
+[ INFO ] InferenceEngine:
+         API version............. 2.1.custom_releases/2020/1_d349c3ba4a2508be72f413fa4dee92cc0e4bc0e1
+[ INFO ] Device info
+         MYRIAD
+         myriadPlugin............ version 2.1
+         Build................... 37988
+
+[Step 3/11] Reading the Intermediate Representation network
+[Step 4/11] Resizing network to match image sizes and given batch
+[ INFO ] Network batch size: 1, precision: MIXED
+[36mI: [ncAPI] [     56858] [python3] ncDeviceOpen:923	ncDeviceOpen() XLinkBootRemote is running for 1.1.2-ma2480...
+[0m
+[36mI: [ncAPI] [     57037] [python3] ncDeviceOpen:943	ncDeviceOpen() XLinkBootRemote returned success X_LINK_SUCCESS for 1.1.2-ma2480[0m
+[36mI: [xLink] [     57423] [Scheduler00Thr] eventReader:567	eventReader thread started[0m
+[36mI: [xLink] [     57423] [Scheduler00Thr] eventSchedulerRun:648	Scheduler thread started[0m
+[36mI: [ncAPI] [     57426] [python3] ncDeviceOpen:1050	XLinkConnect done - link Id 0
+[0m
+[36mI: [ncAPI] [     57426] [python3] ncDeviceOpen:1081	Booted 1.1.2-ma2480 (2.2-) -> VSC
+[0m
+[36mI: [ncAPI] [     58428] [python3] getDevAttributes:1264	Device attributes
+[0m
+[36mI: [ncAPI] [     58428] [python3] getDevAttributes:1266	Device FW version: 444c4454.2480.0.0
+[0m
+[36mI: [ncAPI] [     58428] [python3] getDevAttributes:1267	Maximum graphs: 10
+[0m
+[36mI: [ncAPI] [     58428] [python3] getDevAttributes:1268	Maximum fifos: 20
+[0m
+[36mI: [ncAPI] [     58428] [python3] getDevAttributes:1269	Device memory capacity: 507510776
+[0m
+[1;32m[Info   ][VPU][MyriadPlugin] Device #0 MYRIAD-X (USB protocol) allocated[0m
+[Step 5/11] Configuring input of the model
+[Step 6/11] Setting device configuration
+[Step 7/11] Loading the model to the device
+[Step 8/11] Setting optimal runtime parameters
+[Step 9/11] Creating infer requests and filling input blobs with images
+[ INFO ] Network input 'conv2d_input' precision FP32, dimensions (NCHW): 1 1 64 64
+[ WARNING ] No input files were given: all inputs will be filled with random values!
+[ INFO ] Infer Request 0 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 1 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 2 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 3 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 4 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 5 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 6 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 7 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+/home/pi/openvino/inference-engine/tools/benchmark_tool/benchmark_app.py:21: DeprecationWarning: The 'warn' method is deprecated, use 'warning' instead
+  logger.warn(" -nstreams default value is determined automatically for a device. "
+[Step 10/11] Measuring performance (Start inference asyncronously, 8 inference requests, limits: 300000 ms duration)
+[Step 11/11] Dumping statistics report
+Count:      199512 iterations
+Duration:   300023.31 ms
+Latency:    11.59 ms
+Throughput: 664.99 FPS
+[36mI: [ncAPI] [     58475] [python3] ncGraphAllocate:1959	Starting Graph allocation sequence
+[0m
+[36mI: [ncAPI] [     58480] [python3] ncGraphAllocate:2045	Sent graph[0m
+[36mI: [ncAPI] [     58484] [python3] ncGraphAllocate:2167	Graph allocation completed successfully
+[0m
+[36mI: [ncAPI] [     58484] [python3] ncFifoCreate:2839	Init fifo[0m
+[36mI: [ncAPI] [     58484] [python3] ncFifoAllocate:2940	Creating fifo[0m
+[36mI: [ncAPI] [     58486] [python3] ncFifoCreate:2839	Init fifo[0m
+[36mI: [ncAPI] [     58486] [python3] ncFifoAllocate:2940	Creating fifo[0m
+[36mI: [ncAPI] [    358673] [python3] ncDeviceClose:1698	Removing device...[0m
+[36mI: [ncAPI] [    359492] [python3] destroyDeviceHandle:1640	Destroying device handler[0m
+
+BENCHMARKING OPENVINO MODEL models/audio_classification_sep-conv.xml
+
+[Step 1/11] Parsing and validating input arguments
+[ WARNING ]  -nstreams default value is determined automatically for a device. Although the automatic selection usually provides a reasonable performance, but it still may be non-optimal for some cases, for more information look at README. 
+[Step 2/11] Loading Inference Engine
+[ INFO ] InferenceEngine:
+         API version............. 2.1.custom_releases/2020/1_d349c3ba4a2508be72f413fa4dee92cc0e4bc0e1
+[ INFO ] Device info
+         MYRIAD
+         myriadPlugin............ version 2.1
+         Build................... 37988
+
+[Step 3/11] Reading the Intermediate Representation network
+[Step 4/11] Resizing network to match image sizes and given batch
+[ INFO ] Network batch size: 1, precision: MIXED
+[36mI: [ncAPI] [    420137] [python3] ncDeviceOpen:923	ncDeviceOpen() XLinkBootRemote is running for 1.1.2-ma2480...
+[0m
+[36mI: [ncAPI] [    420316] [python3] ncDeviceOpen:943	ncDeviceOpen() XLinkBootRemote returned success X_LINK_SUCCESS for 1.1.2-ma2480[0m
+[36mI: [xLink] [    420713] [Scheduler00Thr] eventReader:567	eventReader thread started[0m
+[36mI: [xLink] [    420713] [Scheduler00Thr] eventSchedulerRun:648	Scheduler thread started[0m
+[36mI: [ncAPI] [    420715] [python3] ncDeviceOpen:1050	XLinkConnect done - link Id 0
+[0m
+[36mI: [ncAPI] [    420715] [python3] ncDeviceOpen:1081	Booted 1.1.2-ma2480 (2.2-) -> VSC
+[0m
+[36mI: [ncAPI] [    421716] [python3] getDevAttributes:1264	Device attributes
+[0m
+[36mI: [ncAPI] [    421716] [python3] getDevAttributes:1266	Device FW version: 444c4454.2480.0.0
+[0m
+[36mI: [ncAPI] [    421716] [python3] getDevAttributes:1267	Maximum graphs: 10
+[0m
+[36mI: [ncAPI] [    421716] [python3] getDevAttributes:1268	Maximum fifos: 20
+[0m
+[36mI: [ncAPI] [    421716] [python3] getDevAttributes:1269	Device memory capacity: 507510776
+[0m
+[1;32m[Info   ][VPU][MyriadPlugin] Device #0 MYRIAD-X (USB protocol) allocated[0m
+[Step 5/11] Configuring input of the model
+[Step 6/11] Setting device configuration
+[Step 7/11] Loading the model to the device
+[Step 8/11] Setting optimal runtime parameters
+[Step 9/11] Creating infer requests and filling input blobs with images
+[ INFO ] Network input 'separable_conv2d_input' precision FP32, dimensions (NCHW): 1 1 64 64
+[ WARNING ] No input files were given: all inputs will be filled with random values!
+[ INFO ] Infer Request 0 filling
+[ INFO ] Fill input 'separable_conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 1 filling
+[ INFO ] Fill input 'separable_conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 2 filling
+[ INFO ] Fill input 'separable_conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 3 filling
+[ INFO ] Fill input 'separable_conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 4 filling
+[ INFO ] Fill input 'separable_conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 5 filling
+[ INFO ] Fill input 'separable_conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 6 filling
+[ INFO ] Fill input 'separable_conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 7 filling
+[ INFO ] Fill input 'separable_conv2d_input' with random values (some binary data is expected)
+/home/pi/openvino/inference-engine/tools/benchmark_tool/benchmark_app.py:21: DeprecationWarning: The 'warn' method is deprecated, use 'warning' instead
+  logger.warn(" -nstreams default value is determined automatically for a device. "
+[Step 10/11] Measuring performance (Start inference asyncronously, 8 inference requests, limits: 300000 ms duration)
+[Step 11/11] Dumping statistics report
+Count:      191200 iterations
+Duration:   300019.73 ms
+Latency:    12.32 ms
+Throughput: 637.29 FPS
+[36mI: [ncAPI] [    421791] [python3] ncGraphAllocate:1959	Starting Graph allocation sequence
+[0m
+[36mI: [ncAPI] [    421794] [python3] ncGraphAllocate:2045	Sent graph[0m
+[36mI: [ncAPI] [    421798] [python3] ncGraphAllocate:2167	Graph allocation completed successfully
+[0m
+[36mI: [ncAPI] [    421798] [python3] ncFifoCreate:2839	Init fifo[0m
+[36mI: [ncAPI] [    421798] [python3] ncFifoAllocate:2940	Creating fifo[0m
+[36mI: [ncAPI] [    421800] [python3] ncFifoCreate:2839	Init fifo[0m
+[36mI: [ncAPI] [    421800] [python3] ncFifoAllocate:2940	Creating fifo[0m
+[36mI: [ncAPI] [    721935] [python3] ncDeviceClose:1698	Removing device...[0m
+[36mI: [ncAPI] [    722752] [python3] destroyDeviceHandle:1640	Destroying device handler[0m
+
+BENCHMARKING OPENVINO MODEL models/audio_classification_input-scaling-0.75_layers-scaling-0.75_pruning-0.5_sep-conv.xml
+
+[Step 1/11] Parsing and validating input arguments
+[ WARNING ]  -nstreams default value is determined automatically for a device. Although the automatic selection usually provides a reasonable performance, but it still may be non-optimal for some cases, for more information look at README. 
+[Step 2/11] Loading Inference Engine
+[ INFO ] InferenceEngine:
+         API version............. 2.1.custom_releases/2020/1_d349c3ba4a2508be72f413fa4dee92cc0e4bc0e1
+[ INFO ] Device info
+         MYRIAD
+         myriadPlugin............ version 2.1
+         Build................... 37988
+
+[Step 3/11] Reading the Intermediate Representation network
+[Step 4/11] Resizing network to match image sizes and given batch
+[ INFO ] Network batch size: 1, precision: MIXED
+[36mI: [ncAPI] [    783387] [python3] ncDeviceOpen:923	ncDeviceOpen() XLinkBootRemote is running for 1.1.2-ma2480...
+[0m
+[36mI: [ncAPI] [    783566] [python3] ncDeviceOpen:943	ncDeviceOpen() XLinkBootRemote returned success X_LINK_SUCCESS for 1.1.2-ma2480[0m
+[36mI: [xLink] [    783963] [Scheduler00Thr] eventSchedulerRun:648	Scheduler thread started[0m
+[36mI: [xLink] [    783963] [EventRead00Thr] eventReader:567	eventReader thread started[0m
+[36mI: [ncAPI] [    783963] [python3] ncDeviceOpen:1050	XLinkConnect done - link Id 0
+[0m
+[36mI: [ncAPI] [    783963] [python3] ncDeviceOpen:1081	Booted 1.1.2-ma2480 (2.2-) -> VSC
+[0m
+[36mI: [ncAPI] [    784965] [python3] getDevAttributes:1264	Device attributes
+[0m
+[36mI: [ncAPI] [    784965] [python3] getDevAttributes:1266	Device FW version: 444c4454.2480.0.0
+[0m
+[36mI: [ncAPI] [    784965] [python3] getDevAttributes:1267	Maximum graphs: 10
+[0m
+[36mI: [ncAPI] [    784965] [python3] getDevAttributes:1268	Maximum fifos: 20
+[0m
+[36mI: [ncAPI] [    784965] [python3] getDevAttributes:1269	Device memory capacity: 507510776
+[0m
+[1;32m[Info   ][VPU][MyriadPlugin] Device #0 MYRIAD-X (USB protocol) allocated[0m
+[Step 5/11] Configuring input of the model
+[Step 6/11] Setting device configuration
+[Step 7/11] Loading the model to the device
+[Step 8/11] Setting optimal runtime parameters
+[Step 9/11] Creating infer requests and filling input blobs with images
+[ INFO ] Network input 'separable_conv2d_input' precision FP32, dimensions (NCHW): 1 1 48 48
+[ WARNING ] No input files were given: all inputs will be filled with random values!
+[ INFO ] Infer Request 0 filling
+[ INFO ] Fill input 'separable_conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 1 filling
+[ INFO ] Fill input 'separable_conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 2 filling
+[ INFO ] Fill input 'separable_conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 3 filling
+[ INFO ] Fill input 'separable_conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 4 filling
+[ INFO ] Fill input 'separable_conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 5 filling
+[ INFO ] Fill input 'separable_conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 6 filling
+[ INFO ] Fill input 'separable_conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 7 filling
+[ INFO ] Fill input 'separable_conv2d_input' with random values (some binary data is expected)
+/home/pi/openvino/inference-engine/tools/benchmark_tool/benchmark_app.py:21: DeprecationWarning: The 'warn' method is deprecated, use 'warning' instead
+  logger.warn(" -nstreams default value is determined automatically for a device. "
+[Step 10/11] Measuring performance (Start inference asyncronously, 8 inference requests, limits: 300000 ms duration)
+[Step 11/11] Dumping statistics report
+Count:      177024 iterations
+Duration:   300024.53 ms
+Latency:    13.30 ms
+Throughput: 590.03 FPS
+[36mI: [ncAPI] [    785033] [python3] ncGraphAllocate:1959	Starting Graph allocation sequence
+[0m
+[36mI: [ncAPI] [    785037] [python3] ncGraphAllocate:2045	Sent graph[0m
+[36mI: [ncAPI] [    785042] [python3] ncGraphAllocate:2167	Graph allocation completed successfully
+[0m
+[36mI: [ncAPI] [    785042] [python3] ncFifoCreate:2839	Init fifo[0m
+[36mI: [ncAPI] [    785043] [python3] ncFifoAllocate:2940	Creating fifo[0m
+[36mI: [ncAPI] [    785044] [python3] ncFifoCreate:2839	Init fifo[0m
+[36mI: [ncAPI] [    785044] [python3] ncFifoAllocate:2940	Creating fifo[0m
+[36mI: [ncAPI] [     85176] [python3] ncDeviceClose:1698	Removing device...[0m
+[36mI: [ncAPI] [     85992] [python3] destroyDeviceHandle:1640	Destroying device handler[0m
+
+BENCHMARKING OPENVINO MODEL models/audio_classification_input-scaling-0.75_layers-scaling-0.75_pruning-0.5.xml
+
+[Step 1/11] Parsing and validating input arguments
+[ WARNING ]  -nstreams default value is determined automatically for a device. Although the automatic selection usually provides a reasonable performance, but it still may be non-optimal for some cases, for more information look at README. 
+[Step 2/11] Loading Inference Engine
+[ INFO ] InferenceEngine:
+         API version............. 2.1.custom_releases/2020/1_d349c3ba4a2508be72f413fa4dee92cc0e4bc0e1
+[ INFO ] Device info
+         MYRIAD
+         myriadPlugin............ version 2.1
+         Build................... 37988
+
+[Step 3/11] Reading the Intermediate Representation network
+[Step 4/11] Resizing network to match image sizes and given batch
+[ INFO ] Network batch size: 1, precision: MIXED
+[36mI: [ncAPI] [    146619] [python3] ncDeviceOpen:923	ncDeviceOpen() XLinkBootRemote is running for 1.1.2-ma2480...
+[0m
+[36mI: [ncAPI] [    146797] [python3] ncDeviceOpen:943	ncDeviceOpen() XLinkBootRemote returned success X_LINK_SUCCESS for 1.1.2-ma2480[0m
+[36mI: [xLink] [    147193] [Scheduler00Thr] eventSchedulerRun:648	Scheduler thread started[0m
+[36mI: [xLink] [    147193] [EventRead00Thr] eventReader:567	eventReader thread started[0m
+[36mI: [ncAPI] [    147193] [python3] ncDeviceOpen:1050	XLinkConnect done - link Id 0
+[0m
+[36mI: [ncAPI] [    147193] [python3] ncDeviceOpen:1081	Booted 1.1.2-ma2480 (2.2-) -> VSC
+[0m
+[36mI: [ncAPI] [    148195] [python3] getDevAttributes:1264	Device attributes
+[0m
+[36mI: [ncAPI] [    148195] [python3] getDevAttributes:1266	Device FW version: 444c4454.2480.0.0
+[0m
+[36mI: [ncAPI] [    148195] [python3] getDevAttributes:1267	Maximum graphs: 10
+[0m
+[36mI: [ncAPI] [    148195] [python3] getDevAttributes:1268	Maximum fifos: 20
+[0m
+[36mI: [ncAPI] [    148195] [python3] getDevAttributes:1269	Device memory capacity: 507510776
+[0m
+[1;32m[Info   ][VPU][MyriadPlugin] Device #0 MYRIAD-X (USB protocol) allocated[0m
+[Step 5/11] Configuring input of the model
+[Step 6/11] Setting device configuration
+[Step 7/11] Loading the model to the device
+[Step 8/11] Setting optimal runtime parameters
+[Step 9/11] Creating infer requests and filling input blobs with images
+[ INFO ] Network input 'conv2d_input' precision FP32, dimensions (NCHW): 1 1 48 48
+[ WARNING ] No input files were given: all inputs will be filled with random values!
+[ INFO ] Infer Request 0 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 1 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 2 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 3 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 4 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 5 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 6 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+[ INFO ] Infer Request 7 filling
+[ INFO ] Fill input 'conv2d_input' with random values (some binary data is expected)
+/home/pi/openvino/inference-engine/tools/benchmark_tool/benchmark_app.py:21: DeprecationWarning: The 'warn' method is deprecated, use 'warning' instead
+  logger.warn(" -nstreams default value is determined automatically for a device. "
+[Step 10/11] Measuring performance (Start inference asyncronously, 8 inference requests, limits: 300000 ms duration)
+[Step 11/11] Dumping statistics report
+Count:      201496 iterations
+Duration:   300024.76 ms
+Latency:    11.71 ms
+Throughput: 671.60 FPS
+[36mI: [ncAPI] [    148231] [python3] ncGraphAllocate:1959	Starting Graph allocation sequence
+[0m
+[36mI: [ncAPI] [    148235] [python3] ncGraphAllocate:2045	Sent graph[0m
+[36mI: [ncAPI] [    148240] [python3] ncGraphAllocate:2167	Graph allocation completed successfully
+[0m
+[36mI: [ncAPI] [    148240] [python3] ncFifoCreate:2839	Init fifo[0m
+[36mI: [ncAPI] [    148240] [python3] ncFifoAllocate:2940	Creating fifo[0m
+[36mI: [ncAPI] [    148242] [python3] ncFifoCreate:2839	Init fifo[0m
+[36mI: [ncAPI] [    148242] [python3] ncFifoAllocate:2940	Creating fifo[0m
+[36mI: [ncAPI] [    448385] [python3] ncDeviceClose:1698	Removing device...[0m
+[36mI: [ncAPI] [    449201] [python3] destroyDeviceHandle:1640	Destroying device handler[0m

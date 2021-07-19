@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<mapping>
+	<map>
+		<framework name="conv2d_10/BiasAdd" out_port_id="0"/>
+		<IR id="3" name="conv2d_10/Conv2D" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="conv2d_9/BiasAdd" out_port_id="0"/>
+		<IR id="1" name="conv2d_9/Conv2D" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="conv2d_10/Relu" out_port_id="0"/>
+		<IR id="4" name="conv2d_10/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv2d_9_input" out_port_id="0"/>
+		<IR id="0" name="conv2d_9_input" out_port_id="0"/>
+	</map>
+	<map>
+		<framework name="conv2d_11/BiasAdd" out_port_id="0"/>
+		<IR id="5" name="conv2d_11/Conv2D" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="conv2d_9/Relu" out_port_id="0"/>
+		<IR id="2" name="conv2d_9/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv2d_11/Relu" out_port_id="0"/>
+		<IR id="6" name="conv2d_11/Relu" out_port_id="1"/>
+	</map>
+</mapping>

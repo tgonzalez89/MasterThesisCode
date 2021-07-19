@@ -1,0 +1,19 @@
+- Train the model
+- Pruning
+- Reducing model size
+- Reduce input size
+
+- Test accuracy: original model vs pruned vs reduced size
+    Test all in FP32 and FP16
+- Test in RPi4: Tensorflow vs OpenVINO
+- Test energy consumption (benchmark mode)
+
+
+
+
+export CUDA_VISIBLE_DEVICES=-1
+
+./train.sh 2>&1 | tee train.log
+
+./test.sh PC 60 2>&1 | tee test_pc.log
+./test.sh Pi 60 2>&1 | tee test_pi.log

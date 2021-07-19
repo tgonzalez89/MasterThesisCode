@@ -1,0 +1,468 @@
+<?xml version="1.0" ?>
+<net name="fruit_classification_input-scaling-0.75_layers-scaling-0.75_pruning-0.5_sep-conv" version="7">
+	<layers>
+		<layer id="0" name="separable_conv2d_input" type="Input">
+			<output>
+				<port id="0" precision="FP16">
+					<dim>1</dim>
+					<dim>3</dim>
+					<dim>75</dim>
+					<dim>75</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="1" name="separable_conv2d/separable_conv2d/depthwise" type="Convolution">
+			<data auto_pad="same_upper" dilations="1,1" group="3" kernel="5,5" output="3" pads_begin="2,2" pads_end="2,2" strides="1,1"/>
+			<input>
+				<port id="0">
+					<dim>1</dim>
+					<dim>3</dim>
+					<dim>75</dim>
+					<dim>75</dim>
+				</port>
+			</input>
+			<output>
+				<port id="2" precision="FP16">
+					<dim>1</dim>
+					<dim>3</dim>
+					<dim>75</dim>
+					<dim>75</dim>
+				</port>
+			</output>
+			<blobs>
+				<weights offset="0" precision="FP16" size="150"/>
+			</blobs>
+		</layer>
+		<layer id="2" name="separable_conv2d/separable_conv2d" type="Convolution">
+			<data auto_pad="valid" dilations="1,1" group="1" kernel="1,1" output="36" pads_begin="0,0" pads_end="0,0" strides="1,1"/>
+			<input>
+				<port id="0">
+					<dim>1</dim>
+					<dim>3</dim>
+					<dim>75</dim>
+					<dim>75</dim>
+				</port>
+			</input>
+			<output>
+				<port id="3" precision="FP16">
+					<dim>1</dim>
+					<dim>36</dim>
+					<dim>75</dim>
+					<dim>75</dim>
+				</port>
+			</output>
+			<blobs>
+				<weights offset="150" precision="FP16" size="216"/>
+				<biases offset="366" precision="FP16" size="72"/>
+			</blobs>
+		</layer>
+		<layer id="3" name="separable_conv2d/Relu" type="ReLU">
+			<input>
+				<port id="0">
+					<dim>1</dim>
+					<dim>36</dim>
+					<dim>75</dim>
+					<dim>75</dim>
+				</port>
+			</input>
+			<output>
+				<port id="1" precision="FP16">
+					<dim>1</dim>
+					<dim>36</dim>
+					<dim>75</dim>
+					<dim>75</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="4" name="max_pooling2d/MaxPool" type="Pooling">
+			<data auto_pad="valid" exclude-pad="true" kernel="2,2" pads_begin="0,0" pads_end="0,0" pool-method="max" strides="2,2"/>
+			<input>
+				<port id="0">
+					<dim>1</dim>
+					<dim>36</dim>
+					<dim>75</dim>
+					<dim>75</dim>
+				</port>
+			</input>
+			<output>
+				<port id="1" precision="FP16">
+					<dim>1</dim>
+					<dim>36</dim>
+					<dim>37</dim>
+					<dim>37</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="5" name="separable_conv2d_1/separable_conv2d/depthwise" type="Convolution">
+			<data auto_pad="same_upper" dilations="1,1" group="36" kernel="5,5" output="36" pads_begin="2,2" pads_end="2,2" strides="1,1"/>
+			<input>
+				<port id="0">
+					<dim>1</dim>
+					<dim>36</dim>
+					<dim>37</dim>
+					<dim>37</dim>
+				</port>
+			</input>
+			<output>
+				<port id="2" precision="FP16">
+					<dim>1</dim>
+					<dim>36</dim>
+					<dim>37</dim>
+					<dim>37</dim>
+				</port>
+			</output>
+			<blobs>
+				<weights offset="438" precision="FP16" size="1800"/>
+			</blobs>
+		</layer>
+		<layer id="6" name="separable_conv2d_1/separable_conv2d" type="Convolution">
+			<data auto_pad="valid" dilations="1,1" group="1" kernel="1,1" output="24" pads_begin="0,0" pads_end="0,0" strides="1,1"/>
+			<input>
+				<port id="0">
+					<dim>1</dim>
+					<dim>36</dim>
+					<dim>37</dim>
+					<dim>37</dim>
+				</port>
+			</input>
+			<output>
+				<port id="3" precision="FP16">
+					<dim>1</dim>
+					<dim>24</dim>
+					<dim>37</dim>
+					<dim>37</dim>
+				</port>
+			</output>
+			<blobs>
+				<weights offset="2238" precision="FP16" size="1728"/>
+				<biases offset="3966" precision="FP16" size="48"/>
+			</blobs>
+		</layer>
+		<layer id="7" name="separable_conv2d_1/Relu" type="ReLU">
+			<input>
+				<port id="0">
+					<dim>1</dim>
+					<dim>24</dim>
+					<dim>37</dim>
+					<dim>37</dim>
+				</port>
+			</input>
+			<output>
+				<port id="1" precision="FP16">
+					<dim>1</dim>
+					<dim>24</dim>
+					<dim>37</dim>
+					<dim>37</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="8" name="max_pooling2d_1/MaxPool" type="Pooling">
+			<data auto_pad="valid" exclude-pad="true" kernel="2,2" pads_begin="0,0" pads_end="0,0" pool-method="max" strides="2,2"/>
+			<input>
+				<port id="0">
+					<dim>1</dim>
+					<dim>24</dim>
+					<dim>37</dim>
+					<dim>37</dim>
+				</port>
+			</input>
+			<output>
+				<port id="1" precision="FP16">
+					<dim>1</dim>
+					<dim>24</dim>
+					<dim>18</dim>
+					<dim>18</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="9" name="separable_conv2d_2/separable_conv2d/depthwise" type="Convolution">
+			<data auto_pad="same_upper" dilations="1,1" group="24" kernel="5,5" output="24" pads_begin="2,2" pads_end="2,2" strides="1,1"/>
+			<input>
+				<port id="0">
+					<dim>1</dim>
+					<dim>24</dim>
+					<dim>18</dim>
+					<dim>18</dim>
+				</port>
+			</input>
+			<output>
+				<port id="2" precision="FP16">
+					<dim>1</dim>
+					<dim>24</dim>
+					<dim>18</dim>
+					<dim>18</dim>
+				</port>
+			</output>
+			<blobs>
+				<weights offset="4014" precision="FP16" size="1200"/>
+			</blobs>
+		</layer>
+		<layer id="10" name="separable_conv2d_2/separable_conv2d" type="Convolution">
+			<data auto_pad="valid" dilations="1,1" group="1" kernel="1,1" output="18" pads_begin="0,0" pads_end="0,0" strides="1,1"/>
+			<input>
+				<port id="0">
+					<dim>1</dim>
+					<dim>24</dim>
+					<dim>18</dim>
+					<dim>18</dim>
+				</port>
+			</input>
+			<output>
+				<port id="3" precision="FP16">
+					<dim>1</dim>
+					<dim>18</dim>
+					<dim>18</dim>
+					<dim>18</dim>
+				</port>
+			</output>
+			<blobs>
+				<weights offset="5214" precision="FP16" size="864"/>
+				<biases offset="6078" precision="FP16" size="36"/>
+			</blobs>
+		</layer>
+		<layer id="11" name="separable_conv2d_2/Relu" type="ReLU">
+			<input>
+				<port id="0">
+					<dim>1</dim>
+					<dim>18</dim>
+					<dim>18</dim>
+					<dim>18</dim>
+				</port>
+			</input>
+			<output>
+				<port id="1" precision="FP16">
+					<dim>1</dim>
+					<dim>18</dim>
+					<dim>18</dim>
+					<dim>18</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="12" name="max_pooling2d_2/MaxPool" type="Pooling">
+			<data auto_pad="valid" exclude-pad="true" kernel="2,2" pads_begin="0,0" pads_end="0,0" pool-method="max" strides="2,2"/>
+			<input>
+				<port id="0">
+					<dim>1</dim>
+					<dim>18</dim>
+					<dim>18</dim>
+					<dim>18</dim>
+				</port>
+			</input>
+			<output>
+				<port id="1" precision="FP16">
+					<dim>1</dim>
+					<dim>18</dim>
+					<dim>9</dim>
+					<dim>9</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="13" name="max_pooling2d_2/MaxPool/Transpose" type="Permute">
+			<data order="0,2,3,1"/>
+			<input>
+				<port id="0">
+					<dim>1</dim>
+					<dim>18</dim>
+					<dim>9</dim>
+					<dim>9</dim>
+				</port>
+			</input>
+			<output>
+				<port id="1" precision="FP16">
+					<dim>1</dim>
+					<dim>9</dim>
+					<dim>9</dim>
+					<dim>18</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="14" name="flatten/Reshape/Cast_11576_const" type="Const">
+			<output>
+				<port id="1" precision="I32">
+					<dim>2</dim>
+				</port>
+			</output>
+			<blobs>
+				<custom offset="6114" precision="I32" size="8"/>
+			</blobs>
+		</layer>
+		<layer id="15" name="flatten/Reshape" type="Reshape">
+			<data special_zero="True"/>
+			<input>
+				<port id="0">
+					<dim>1</dim>
+					<dim>9</dim>
+					<dim>9</dim>
+					<dim>18</dim>
+				</port>
+				<port id="1">
+					<dim>2</dim>
+				</port>
+			</input>
+			<output>
+				<port id="2" precision="FP16">
+					<dim>1</dim>
+					<dim>1458</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="16" name="dense/MatMul" type="FullyConnected">
+			<data out-size="96"/>
+			<input>
+				<port id="0">
+					<dim>1</dim>
+					<dim>1458</dim>
+				</port>
+			</input>
+			<output>
+				<port id="3" precision="FP16">
+					<dim>1</dim>
+					<dim>96</dim>
+				</port>
+			</output>
+			<blobs>
+				<weights offset="6122" precision="FP16" size="279936"/>
+				<biases offset="286058" precision="FP16" size="192"/>
+			</blobs>
+		</layer>
+		<layer id="17" name="dense/Relu" type="ReLU">
+			<input>
+				<port id="0">
+					<dim>1</dim>
+					<dim>96</dim>
+				</port>
+			</input>
+			<output>
+				<port id="1" precision="FP16">
+					<dim>1</dim>
+					<dim>96</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="18" name="dense_1/MatMul" type="FullyConnected">
+			<data out-size="48"/>
+			<input>
+				<port id="0">
+					<dim>1</dim>
+					<dim>96</dim>
+				</port>
+			</input>
+			<output>
+				<port id="3" precision="FP16">
+					<dim>1</dim>
+					<dim>48</dim>
+				</port>
+			</output>
+			<blobs>
+				<weights offset="286250" precision="FP16" size="9216"/>
+				<biases offset="295466" precision="FP16" size="96"/>
+			</blobs>
+		</layer>
+		<layer id="19" name="dense_1/Relu" type="ReLU">
+			<input>
+				<port id="0">
+					<dim>1</dim>
+					<dim>48</dim>
+				</port>
+			</input>
+			<output>
+				<port id="1" precision="FP16">
+					<dim>1</dim>
+					<dim>48</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="20" name="dense_2/MatMul" type="FullyConnected">
+			<data out-size="131"/>
+			<input>
+				<port id="0">
+					<dim>1</dim>
+					<dim>48</dim>
+				</port>
+			</input>
+			<output>
+				<port id="3" precision="FP16">
+					<dim>1</dim>
+					<dim>131</dim>
+				</port>
+			</output>
+			<blobs>
+				<weights offset="295562" precision="FP16" size="12576"/>
+				<biases offset="308138" precision="FP16" size="262"/>
+			</blobs>
+		</layer>
+		<layer id="21" name="dense_2/Softmax" type="SoftMax">
+			<data axis="1"/>
+			<input>
+				<port id="0">
+					<dim>1</dim>
+					<dim>131</dim>
+				</port>
+			</input>
+			<output>
+				<port id="1" precision="FP16">
+					<dim>1</dim>
+					<dim>131</dim>
+				</port>
+			</output>
+		</layer>
+	</layers>
+	<edges>
+		<edge from-layer="0" from-port="0" to-layer="1" to-port="0"/>
+		<edge from-layer="1" from-port="2" to-layer="2" to-port="0"/>
+		<edge from-layer="2" from-port="3" to-layer="3" to-port="0"/>
+		<edge from-layer="3" from-port="1" to-layer="4" to-port="0"/>
+		<edge from-layer="4" from-port="1" to-layer="5" to-port="0"/>
+		<edge from-layer="5" from-port="2" to-layer="6" to-port="0"/>
+		<edge from-layer="6" from-port="3" to-layer="7" to-port="0"/>
+		<edge from-layer="7" from-port="1" to-layer="8" to-port="0"/>
+		<edge from-layer="8" from-port="1" to-layer="9" to-port="0"/>
+		<edge from-layer="9" from-port="2" to-layer="10" to-port="0"/>
+		<edge from-layer="10" from-port="3" to-layer="11" to-port="0"/>
+		<edge from-layer="11" from-port="1" to-layer="12" to-port="0"/>
+		<edge from-layer="12" from-port="1" to-layer="13" to-port="0"/>
+		<edge from-layer="13" from-port="1" to-layer="15" to-port="0"/>
+		<edge from-layer="14" from-port="1" to-layer="15" to-port="1"/>
+		<edge from-layer="15" from-port="2" to-layer="16" to-port="0"/>
+		<edge from-layer="16" from-port="3" to-layer="17" to-port="0"/>
+		<edge from-layer="17" from-port="1" to-layer="18" to-port="0"/>
+		<edge from-layer="18" from-port="3" to-layer="19" to-port="0"/>
+		<edge from-layer="19" from-port="1" to-layer="20" to-port="0"/>
+		<edge from-layer="20" from-port="3" to-layer="21" to-port="0"/>
+	</edges>
+	<meta_data>
+		<MO_version value="2020.1.0-61-gd349c3ba4a"/>
+		<cli_parameters>
+			<blobs_as_inputs value="True"/>
+			<data_type value="FP16"/>
+			<disable_nhwc_to_nchw value="False"/>
+			<disable_resnet_optimization value="False"/>
+			<enable_concat_optimization value="False"/>
+			<extensions value="DIR"/>
+			<framework value="tf"/>
+			<freeze_placeholder_with_value value="{}"/>
+			<generate_deprecated_IR_V2 value="False"/>
+			<generate_deprecated_IR_V7 value="True"/>
+			<generate_experimental_IR_V10 value="False"/>
+			<input_model value="DIR/fruit_classification_input-scaling-0.75_layers-scaling-0.75_pruning-0.5_sep-conv.pb"/>
+			<input_model_is_text value="False"/>
+			<input_shape value="[1,75,75,3]"/>
+			<keep_quantize_ops_in_IR value="True"/>
+			<keep_shape_ops value="False"/>
+			<log_level value="ERROR"/>
+			<mean_scale_values value="{}"/>
+			<mean_values value="()"/>
+			<model_name value="fruit_classification_input-scaling-0.75_layers-scaling-0.75_pruning-0.5_sep-conv"/>
+			<move_to_preprocess value="False"/>
+			<output_dir value="DIR"/>
+			<placeholder_data_types value="{}"/>
+			<placeholder_shapes value="[ 1 75 75  3]"/>
+			<progress value="False"/>
+			<reverse_input_channels value="False"/>
+			<scale_values value="()"/>
+			<silent value="False"/>
+			<stream_output value="False"/>
+			<unset unset_cli_parameters="batch, disable_fusing, disable_gfusing, finegrain_fusing, input, input_checkpoint, input_meta_graph, output, saved_model_dir, saved_model_tags, scale, tensorboard_logdir, tensorflow_custom_layer_libraries, tensorflow_custom_operations_config_update, tensorflow_object_detection_api_pipeline_config, tensorflow_operation_patterns, tensorflow_subgraph_patterns, tensorflow_use_custom_operations_config, transformations_config"/>
+		</cli_parameters>
+	</meta_data>
+</net>

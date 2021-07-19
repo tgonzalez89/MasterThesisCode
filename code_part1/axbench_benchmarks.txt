@@ -1,0 +1,79 @@
+blackscholes 200x200=40000
+
+Count:      2960 iterations
+Duration:   15021.48 ms
+Latency:    20.25 ms
+Throughput: 197.05 FPS
+
+40000*2960 / 15021.48 = 7882.05 inferences/ms
+200000 / 7882.05 * 1000 = 25374.10 ns
+real = 32129
+
+
+inversek2j 200x200=40000
+
+Count:      4496 iterations
+Duration:   15022.37 ms
+Latency:    13.66 ms
+Throughput: 299.29 FPS
+
+40000*4496 / 15022.37 = 11971.5 inferences/ms
+1000000 / 11971.5 * 1000 = 83531.72 ns
+real = 86233
+
+
+jmeint 200x200=40000
+
+Count:      1252 iterations
+Duration:   15069.95 ms
+Latency:    48.09 ms
+Throughput: 83.08 FPS
+
+40000*1252 / 15069.95 = 3323.17 inferences/ms
+1000000 / 3323.17 * 1000 = 300917.50 ns
+real = 326174
+
+
+kmeans 384x384=147456
+
+Count:      968 iterations
+Duration:   15113.06 ms
+Latency:    62.72 ms
+Throughput: 64.05 FPS
+
+147456*968 / 15113.06 = 9444.64 inferences/ms
+8294400*6 / 9444.64 * 1000 = 5269274.42 ns
+real = 5707387
+
+
+sobel 256x256=65536
+
+Count:      4808 iterations
+Duration:   15012.72 ms
+Latency:    12.38 ms
+Throughput: 320.26 FPS
+
+65536*4808 / 15012.72 = 20988.7 inferences/ms
+8294400 / 20988.7 * 1000 = 395184.08 ns
+real = 450249
+
+
+
+
+audio example
+
+Tensorflow
+Idle: 2.9 W
+Load: 6.1 W
+Count:      6000 iterations
+Duration:   80734.02 ms
+Throughput: 74.32 FPS
+
+OpenVINO
+Idle: 3.6 W
+Load: 6.6 W
+Count:      24384 iterations
+Duration:   60010.68 ms
+Latency:    9.57 ms
+Throughput: 406.33 FPS
+

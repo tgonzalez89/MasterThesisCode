@@ -1,0 +1,831 @@
+
+BENCHMARKING TENSORFLOW CPU
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/init_ops.py:97: calling GlorotUniform.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/init_ops.py:97: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+2020-10-31 13:53:32.114297: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-10-31 13:53:32.138682: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2020-10-31 13:53:32.138719: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: ubuntu18
+2020-10-31 13:53:32.138729: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: ubuntu18
+2020-10-31 13:53:32.138843: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 455.32.0
+2020-10-31 13:53:32.138878: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 455.32.0
+2020-10-31 13:53:32.138889: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 455.32.0
+2020-10-31 13:53:32.139216: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-10-31 13:53:32.146013: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3500200000 Hz
+2020-10-31 13:53:32.146758: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0xa136e70 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-10-31 13:53:32.146806: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+
+BENCHMARKING TENSORFLOW MODEL models/scene_classification.h5
+
+Processing data...
+Benchmarking...
+Count:      63000 iterations
+Duration:   314760.94937324524 ms
+Throughput: 200.1518934462682 FPS
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/init_ops.py:97: calling GlorotUniform.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/init_ops.py:97: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+2020-10-31 13:58:51.166065: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-10-31 13:58:51.190716: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2020-10-31 13:58:51.190752: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: ubuntu18
+2020-10-31 13:58:51.190762: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: ubuntu18
+2020-10-31 13:58:51.190883: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 455.32.0
+2020-10-31 13:58:51.190917: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 455.32.0
+2020-10-31 13:58:51.190929: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 455.32.0
+2020-10-31 13:58:51.191253: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-10-31 13:58:51.198015: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3500200000 Hz
+2020-10-31 13:58:51.198640: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0xb37f950 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-10-31 13:58:51.198693: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+
+BENCHMARKING TENSORFLOW MODEL models/scene_classification_input-scaling-0.75.h5
+
+Processing data...
+Benchmarking...
+Count:      111000 iterations
+Duration:   308155.88212013245 ms
+Throughput: 360.20730558934264 FPS
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/init_ops.py:97: calling GlorotUniform.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/init_ops.py:97: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+2020-10-31 14:04:03.348208: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-10-31 14:04:03.373918: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2020-10-31 14:04:03.373941: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: ubuntu18
+2020-10-31 14:04:03.373947: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: ubuntu18
+2020-10-31 14:04:03.374024: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 455.32.0
+2020-10-31 14:04:03.374047: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 455.32.0
+2020-10-31 14:04:03.374054: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 455.32.0
+2020-10-31 14:04:03.374280: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-10-31 14:04:03.378801: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3500200000 Hz
+2020-10-31 14:04:03.379498: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0xf608820 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-10-31 14:04:03.379538: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+
+BENCHMARKING TENSORFLOW MODEL models/scene_classification_layers-scaling-0.75.h5
+
+Processing data...
+Benchmarking...
+Count:      72000 iterations
+Duration:   302778.3603668213 ms
+Throughput: 237.79770757979776 FPS
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/init_ops.py:97: calling GlorotUniform.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/init_ops.py:97: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+2020-10-31 14:09:10.153403: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-10-31 14:09:10.175966: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2020-10-31 14:09:10.176007: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: ubuntu18
+2020-10-31 14:09:10.176018: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: ubuntu18
+2020-10-31 14:09:10.176146: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 455.32.0
+2020-10-31 14:09:10.176185: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 455.32.0
+2020-10-31 14:09:10.176200: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 455.32.0
+2020-10-31 14:09:10.176581: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-10-31 14:09:10.183120: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3500200000 Hz
+2020-10-31 14:09:10.183818: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0xea43530 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-10-31 14:09:10.183858: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+WARNING:tensorflow:No training configuration found in save file: the model was *not* compiled. Compile it manually.
+
+BENCHMARKING TENSORFLOW MODEL models/scene_classification_pruning-0.5.h5
+
+Processing data...
+Benchmarking...
+Count:      63000 iterations
+Duration:   311063.3294582367 ms
+Throughput: 202.53110551386408 FPS
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/init_ops.py:97: calling GlorotUniform.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/init_ops.py:97: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+2020-10-31 14:14:24.699371: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-10-31 14:14:24.724636: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2020-10-31 14:14:24.724687: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: ubuntu18
+2020-10-31 14:14:24.724709: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: ubuntu18
+2020-10-31 14:14:24.724869: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 455.32.0
+2020-10-31 14:14:24.724899: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 455.32.0
+2020-10-31 14:14:24.724909: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 455.32.0
+2020-10-31 14:14:24.725144: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-10-31 14:14:24.729857: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3500200000 Hz
+2020-10-31 14:14:24.730515: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x4b21bc0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-10-31 14:14:24.730554: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+
+BENCHMARKING TENSORFLOW MODEL models/scene_classification_sep-conv.h5
+
+Processing data...
+Benchmarking...
+Count:      66000 iterations
+Duration:   300531.32486343384 ms
+Throughput: 219.6110506283877 FPS
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/init_ops.py:97: calling GlorotUniform.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/init_ops.py:97: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+2020-10-31 14:19:29.669911: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-10-31 14:19:29.697910: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2020-10-31 14:19:29.697963: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: ubuntu18
+2020-10-31 14:19:29.697978: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: ubuntu18
+2020-10-31 14:19:29.698158: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 455.32.0
+2020-10-31 14:19:29.698209: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 455.32.0
+2020-10-31 14:19:29.698225: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 455.32.0
+2020-10-31 14:19:29.698708: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-10-31 14:19:29.704706: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3500200000 Hz
+2020-10-31 14:19:29.705341: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7c66400 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-10-31 14:19:29.705379: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+WARNING:tensorflow:No training configuration found in save file: the model was *not* compiled. Compile it manually.
+
+BENCHMARKING TENSORFLOW MODEL models/scene_classification_input-scaling-0.75_layers-scaling-0.75_pruning-0.5_sep-conv.h5
+
+Processing data...
+Benchmarking...
+Count:      132000 iterations
+Duration:   305807.93261528015 ms
+Throughput: 431.64347919666886 FPS
+
+BENCHMARKING TENSORFLOW GPU
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/init_ops.py:97: calling GlorotUniform.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/init_ops.py:97: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+2020-10-31 14:24:39.022758: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-10-31 14:24:39.056006: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.329
+pciBusID: 0000:02:00.0
+2020-10-31 14:24:39.056349: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-10-31 14:24:39.057509: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-10-31 14:24:39.058439: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-10-31 14:24:39.058663: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-10-31 14:24:39.059572: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-10-31 14:24:39.060250: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-10-31 14:24:39.062534: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-10-31 14:24:39.063569: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1767] Adding visible gpu devices: 0
+2020-10-31 14:24:39.063868: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-10-31 14:24:39.067821: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3500200000 Hz
+2020-10-31 14:24:39.068536: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x95c1b30 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-10-31 14:24:39.068582: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-10-31 14:24:39.128608: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x9654610 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2020-10-31 14:24:39.128656: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce GTX 980, Compute Capability 5.2
+2020-10-31 14:24:39.129697: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.329
+pciBusID: 0000:02:00.0
+2020-10-31 14:24:39.129803: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-10-31 14:24:39.129875: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-10-31 14:24:39.129924: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-10-31 14:24:39.129969: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-10-31 14:24:39.130015: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-10-31 14:24:39.130059: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-10-31 14:24:39.130105: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-10-31 14:24:39.131773: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1767] Adding visible gpu devices: 0
+2020-10-31 14:24:39.131872: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-10-31 14:24:39.133983: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1180] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-10-31 14:24:39.134017: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1186]      0 
+2020-10-31 14:24:39.134034: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1199] 0:   N 
+2020-10-31 14:24:39.135822: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1325] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3384 MB memory) -> physical GPU (device: 0, name: GeForce GTX 980, pci bus id: 0000:02:00.0, compute capability: 5.2)
+2020-10-31 14:24:40.323800: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-10-31 14:24:40.433039: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+
+BENCHMARKING TENSORFLOW MODEL models/scene_classification.h5
+
+Processing data...
+Benchmarking...
+Count:      378000 iterations
+Duration:   301662.5888347626 ms
+Throughput: 1253.0556124314496 FPS
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/init_ops.py:97: calling GlorotUniform.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/init_ops.py:97: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+2020-10-31 14:29:45.774694: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-10-31 14:29:45.809985: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.329
+pciBusID: 0000:02:00.0
+2020-10-31 14:29:45.810227: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-10-31 14:29:45.811140: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-10-31 14:29:45.811954: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-10-31 14:29:45.812205: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-10-31 14:29:45.813267: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-10-31 14:29:45.814062: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-10-31 14:29:45.816375: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-10-31 14:29:45.817015: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1767] Adding visible gpu devices: 0
+2020-10-31 14:29:45.817313: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-10-31 14:29:45.821467: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3500200000 Hz
+2020-10-31 14:29:45.821866: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x8aa0400 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-10-31 14:29:45.821881: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-10-31 14:29:45.877270: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x8b32ee0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2020-10-31 14:29:45.877292: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce GTX 980, Compute Capability 5.2
+2020-10-31 14:29:45.877664: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.329
+pciBusID: 0000:02:00.0
+2020-10-31 14:29:45.877721: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-10-31 14:29:45.877746: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-10-31 14:29:45.877769: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-10-31 14:29:45.877791: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-10-31 14:29:45.877814: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-10-31 14:29:45.877843: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-10-31 14:29:45.877869: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-10-31 14:29:45.878453: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1767] Adding visible gpu devices: 0
+2020-10-31 14:29:45.878491: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-10-31 14:29:45.879178: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1180] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-10-31 14:29:45.879193: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1186]      0 
+2020-10-31 14:29:45.879200: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1199] 0:   N 
+2020-10-31 14:29:45.879836: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1325] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3384 MB memory) -> physical GPU (device: 0, name: GeForce GTX 980, pci bus id: 0000:02:00.0, compute capability: 5.2)
+2020-10-31 14:29:46.994657: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-10-31 14:29:47.101268: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+
+BENCHMARKING TENSORFLOW MODEL models/scene_classification_input-scaling-0.75.h5
+
+Processing data...
+Benchmarking...
+Count:      675000 iterations
+Duration:   300696.6154575348 ms
+Throughput: 2244.787487790415 FPS
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/init_ops.py:97: calling GlorotUniform.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/init_ops.py:97: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+2020-10-31 14:34:51.250504: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-10-31 14:34:51.284232: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.329
+pciBusID: 0000:02:00.0
+2020-10-31 14:34:51.284472: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-10-31 14:34:51.285393: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-10-31 14:34:51.286225: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-10-31 14:34:51.286484: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-10-31 14:34:51.287554: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-10-31 14:34:51.288347: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-10-31 14:34:51.290867: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-10-31 14:34:51.291515: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1767] Adding visible gpu devices: 0
+2020-10-31 14:34:51.291812: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-10-31 14:34:51.295723: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3500200000 Hz
+2020-10-31 14:34:51.296443: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x9742c90 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-10-31 14:34:51.296486: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-10-31 14:34:51.360679: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x97d5770 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2020-10-31 14:34:51.360728: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce GTX 980, Compute Capability 5.2
+2020-10-31 14:34:51.361767: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.329
+pciBusID: 0000:02:00.0
+2020-10-31 14:34:51.361878: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-10-31 14:34:51.361925: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-10-31 14:34:51.361964: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-10-31 14:34:51.362002: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-10-31 14:34:51.362040: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-10-31 14:34:51.362078: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-10-31 14:34:51.362117: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-10-31 14:34:51.363787: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1767] Adding visible gpu devices: 0
+2020-10-31 14:34:51.363883: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-10-31 14:34:51.366017: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1180] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-10-31 14:34:51.366051: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1186]      0 
+2020-10-31 14:34:51.366064: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1199] 0:   N 
+2020-10-31 14:34:51.367843: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1325] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3384 MB memory) -> physical GPU (device: 0, name: GeForce GTX 980, pci bus id: 0000:02:00.0, compute capability: 5.2)
+2020-10-31 14:34:52.503062: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-10-31 14:34:52.626151: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+
+BENCHMARKING TENSORFLOW MODEL models/scene_classification_layers-scaling-0.75.h5
+
+Processing data...
+Benchmarking...
+Count:      396000 iterations
+Duration:   301362.34855651855 ms
+Throughput: 1314.0327645333994 FPS
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/init_ops.py:97: calling GlorotUniform.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/init_ops.py:97: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+2020-10-31 14:39:57.460547: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-10-31 14:39:57.493731: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.329
+pciBusID: 0000:02:00.0
+2020-10-31 14:39:57.493975: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-10-31 14:39:57.494878: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-10-31 14:39:57.495693: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-10-31 14:39:57.495942: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-10-31 14:39:57.496981: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-10-31 14:39:57.497770: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-10-31 14:39:57.500136: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-10-31 14:39:57.500770: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1767] Adding visible gpu devices: 0
+2020-10-31 14:39:57.501066: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-10-31 14:39:57.504955: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3500200000 Hz
+2020-10-31 14:39:57.505563: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0xd13e830 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-10-31 14:39:57.505602: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-10-31 14:39:57.558753: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0xd1d1310 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2020-10-31 14:39:57.558802: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce GTX 980, Compute Capability 5.2
+2020-10-31 14:39:57.559843: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.329
+pciBusID: 0000:02:00.0
+2020-10-31 14:39:57.559949: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-10-31 14:39:57.560001: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-10-31 14:39:57.560047: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-10-31 14:39:57.560093: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-10-31 14:39:57.560139: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-10-31 14:39:57.560185: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-10-31 14:39:57.560232: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-10-31 14:39:57.561915: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1767] Adding visible gpu devices: 0
+2020-10-31 14:39:57.562011: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-10-31 14:39:57.564143: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1180] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-10-31 14:39:57.564175: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1186]      0 
+2020-10-31 14:39:57.564189: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1199] 0:   N 
+2020-10-31 14:39:57.566016: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1325] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3384 MB memory) -> physical GPU (device: 0, name: GeForce GTX 980, pci bus id: 0000:02:00.0, compute capability: 5.2)
+WARNING:tensorflow:No training configuration found in save file: the model was *not* compiled. Compile it manually.
+2020-10-31 14:39:58.022015: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-10-31 14:39:58.132127: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+
+BENCHMARKING TENSORFLOW MODEL models/scene_classification_pruning-0.5.h5
+
+Processing data...
+Benchmarking...
+Count:      375000 iterations
+Duration:   301107.4073314667 ms
+Throughput: 1245.4027727959228 FPS
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/init_ops.py:97: calling GlorotUniform.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/init_ops.py:97: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+2020-10-31 14:45:02.759712: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-10-31 14:45:02.790876: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.329
+pciBusID: 0000:02:00.0
+2020-10-31 14:45:02.791098: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-10-31 14:45:02.791894: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-10-31 14:45:02.792627: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-10-31 14:45:02.792852: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-10-31 14:45:02.793781: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-10-31 14:45:02.794485: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-10-31 14:45:02.796769: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-10-31 14:45:02.797422: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1767] Adding visible gpu devices: 0
+2020-10-31 14:45:02.797724: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-10-31 14:45:02.801669: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3500200000 Hz
+2020-10-31 14:45:02.802005: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x9ac84f0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-10-31 14:45:02.802023: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-10-31 14:45:02.853558: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x9b5afd0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2020-10-31 14:45:02.853607: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce GTX 980, Compute Capability 5.2
+2020-10-31 14:45:02.854669: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.329
+pciBusID: 0000:02:00.0
+2020-10-31 14:45:02.854779: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-10-31 14:45:02.854831: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-10-31 14:45:02.854876: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-10-31 14:45:02.854920: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-10-31 14:45:02.854965: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-10-31 14:45:02.855009: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-10-31 14:45:02.855054: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-10-31 14:45:02.856714: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1767] Adding visible gpu devices: 0
+2020-10-31 14:45:02.856807: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-10-31 14:45:02.858889: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1180] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-10-31 14:45:02.858921: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1186]      0 
+2020-10-31 14:45:02.858933: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1199] 0:   N 
+2020-10-31 14:45:02.860718: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1325] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3384 MB memory) -> physical GPU (device: 0, name: GeForce GTX 980, pci bus id: 0000:02:00.0, compute capability: 5.2)
+2020-10-31 14:45:04.177463: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-10-31 14:45:04.290366: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+
+BENCHMARKING TENSORFLOW MODEL models/scene_classification_sep-conv.h5
+
+Processing data...
+Benchmarking...
+Count:      360000 iterations
+Duration:   300387.47477531433 ms
+Throughput: 1198.4521001392452 FPS
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/init_ops.py:97: calling GlorotUniform.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/init_ops.py:97: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+2020-10-31 14:50:08.326482: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-10-31 14:50:08.361905: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.329
+pciBusID: 0000:02:00.0
+2020-10-31 14:50:08.362152: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-10-31 14:50:08.363092: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-10-31 14:50:08.363932: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-10-31 14:50:08.364194: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-10-31 14:50:08.365281: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-10-31 14:50:08.366098: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-10-31 14:50:08.368425: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-10-31 14:50:08.369068: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1767] Adding visible gpu devices: 0
+2020-10-31 14:50:08.369366: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-10-31 14:50:08.373361: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3500200000 Hz
+2020-10-31 14:50:08.373732: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x786a940 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-10-31 14:50:08.373745: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-10-31 14:50:08.425517: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x78fd420 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2020-10-31 14:50:08.425565: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce GTX 980, Compute Capability 5.2
+2020-10-31 14:50:08.426635: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.329
+pciBusID: 0000:02:00.0
+2020-10-31 14:50:08.426728: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-10-31 14:50:08.426772: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-10-31 14:50:08.426810: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-10-31 14:50:08.426848: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-10-31 14:50:08.426886: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-10-31 14:50:08.426924: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-10-31 14:50:08.426963: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-10-31 14:50:08.428635: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1767] Adding visible gpu devices: 0
+2020-10-31 14:50:08.428720: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-10-31 14:50:08.430824: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1180] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-10-31 14:50:08.430858: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1186]      0 
+2020-10-31 14:50:08.430872: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1199] 0:   N 
+2020-10-31 14:50:08.432680: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1325] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3384 MB memory) -> physical GPU (device: 0, name: GeForce GTX 980, pci bus id: 0000:02:00.0, compute capability: 5.2)
+WARNING:tensorflow:No training configuration found in save file: the model was *not* compiled. Compile it manually.
+2020-10-31 14:50:08.927865: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-10-31 14:50:09.035930: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+
+BENCHMARKING TENSORFLOW MODEL models/scene_classification_input-scaling-0.75_layers-scaling-0.75_pruning-0.5_sep-conv.h5
+
+Processing data...
+Benchmarking...
+Count:      732000 iterations
+Duration:   300551.03754997253 ms
+Throughput: 2435.5264449163333 FPS
+
+BENCHMARKING OPENVINO CPU
+
+
+BENCHMARKING OPENVINO MODEL models/scene_classification.xml
+
+[Step 1/11] Parsing and validating input arguments
+[Step 2/11] Loading Inference Engine
+[ INFO ] InferenceEngine:
+         API version............. 2.1.37988
+[ INFO ] Device info
+         CPU
+         MKLDNNPlugin............ version 2.1
+         Build................... 37988
+
+[Step 3/11] Reading the Intermediate Representation network
+[Step 4/11] Resizing network to match image sizes and given batch
+[ INFO ] Network batch size: 1, precision: MIXED
+[Step 5/11] Configuring input of the model
+[Step 6/11] Setting device configuration
+[Step 7/11] Loading the model to the device
+[Step 8/11] Setting optimal runtime parameters
+[Step 9/11] Creating infer requests and filling input blobs with images
+[ INFO ] Network input 'conv2d_input' precision U8, dimensions (NCHW): 1 3 150 150
+[ WARNING ] No input files were given: all inputs will be filled with random values!
+[ INFO ] Infer Request 0 filling
+[ INFO ] Fill input 'conv2d_input' with random values (image is expected)
+[ INFO ] Infer Request 1 filling
+[ INFO ] Fill input 'conv2d_input' with random values (image is expected)
+[ INFO ] Infer Request 2 filling
+[ INFO ] Fill input 'conv2d_input' with random values (image is expected)
+[ INFO ] Infer Request 3 filling
+[ INFO ] Fill input 'conv2d_input' with random values (image is expected)
+[Step 10/11] Measuring performance (Start inference asyncronously, 4 inference requests using 4 streams for CPU, limits: 300000 ms duration)
+[Step 11/11] Dumping statistics report
+Count:      93968 iterations
+Duration:   300030.66 ms
+Latency:    12.51 ms
+Throughput: 313.19 FPS
+
+BENCHMARKING OPENVINO MODEL models/scene_classification_input-scaling-0.75.xml
+
+[Step 1/11] Parsing and validating input arguments
+[Step 2/11] Loading Inference Engine
+[ INFO ] InferenceEngine:
+         API version............. 2.1.37988
+[ INFO ] Device info
+         CPU
+         MKLDNNPlugin............ version 2.1
+         Build................... 37988
+
+[Step 3/11] Reading the Intermediate Representation network
+[Step 4/11] Resizing network to match image sizes and given batch
+[ INFO ] Network batch size: 1, precision: MIXED
+[Step 5/11] Configuring input of the model
+[Step 6/11] Setting device configuration
+[Step 7/11] Loading the model to the device
+[Step 8/11] Setting optimal runtime parameters
+[Step 9/11] Creating infer requests and filling input blobs with images
+[ INFO ] Network input 'conv2d_input' precision U8, dimensions (NCHW): 1 3 112 112
+[ WARNING ] No input files were given: all inputs will be filled with random values!
+[ INFO ] Infer Request 0 filling
+[ INFO ] Fill input 'conv2d_input' with random values (image is expected)
+[ INFO ] Infer Request 1 filling
+[ INFO ] Fill input 'conv2d_input' with random values (image is expected)
+[ INFO ] Infer Request 2 filling
+[ INFO ] Fill input 'conv2d_input' with random values (image is expected)
+[ INFO ] Infer Request 3 filling
+[ INFO ] Fill input 'conv2d_input' with random values (image is expected)
+[Step 10/11] Measuring performance (Start inference asyncronously, 4 inference requests using 4 streams for CPU, limits: 300000 ms duration)
+[Step 11/11] Dumping statistics report
+Count:      165028 iterations
+Duration:   300024.39 ms
+Latency:    7.10 ms
+Throughput: 550.05 FPS
+
+BENCHMARKING OPENVINO MODEL models/scene_classification_layers-scaling-0.75.xml
+
+[Step 1/11] Parsing and validating input arguments
+[Step 2/11] Loading Inference Engine
+[ INFO ] InferenceEngine:
+         API version............. 2.1.37988
+[ INFO ] Device info
+         CPU
+         MKLDNNPlugin............ version 2.1
+         Build................... 37988
+
+[Step 3/11] Reading the Intermediate Representation network
+[Step 4/11] Resizing network to match image sizes and given batch
+[ INFO ] Network batch size: 1, precision: MIXED
+[Step 5/11] Configuring input of the model
+[Step 6/11] Setting device configuration
+[Step 7/11] Loading the model to the device
+[Step 8/11] Setting optimal runtime parameters
+[Step 9/11] Creating infer requests and filling input blobs with images
+[ INFO ] Network input 'conv2d_input' precision U8, dimensions (NCHW): 1 3 150 150
+[ WARNING ] No input files were given: all inputs will be filled with random values!
+[ INFO ] Infer Request 0 filling
+[ INFO ] Fill input 'conv2d_input' with random values (image is expected)
+[ INFO ] Infer Request 1 filling
+[ INFO ] Fill input 'conv2d_input' with random values (image is expected)
+[ INFO ] Infer Request 2 filling
+[ INFO ] Fill input 'conv2d_input' with random values (image is expected)
+[ INFO ] Infer Request 3 filling
+[ INFO ] Fill input 'conv2d_input' with random values (image is expected)
+[Step 10/11] Measuring performance (Start inference asyncronously, 4 inference requests using 4 streams for CPU, limits: 300000 ms duration)
+[Step 11/11] Dumping statistics report
+Count:      114876 iterations
+Duration:   300021.15 ms
+Latency:    10.29 ms
+Throughput: 382.89 FPS
+
+BENCHMARKING OPENVINO MODEL models/scene_classification_pruning-0.5.xml
+
+[Step 1/11] Parsing and validating input arguments
+[Step 2/11] Loading Inference Engine
+[ INFO ] InferenceEngine:
+         API version............. 2.1.37988
+[ INFO ] Device info
+         CPU
+         MKLDNNPlugin............ version 2.1
+         Build................... 37988
+
+[Step 3/11] Reading the Intermediate Representation network
+[Step 4/11] Resizing network to match image sizes and given batch
+[ INFO ] Network batch size: 1, precision: MIXED
+[Step 5/11] Configuring input of the model
+[Step 6/11] Setting device configuration
+[Step 7/11] Loading the model to the device
+[Step 8/11] Setting optimal runtime parameters
+[Step 9/11] Creating infer requests and filling input blobs with images
+[ INFO ] Network input 'conv2d_input' precision U8, dimensions (NCHW): 1 3 150 150
+[ WARNING ] No input files were given: all inputs will be filled with random values!
+[ INFO ] Infer Request 0 filling
+[ INFO ] Fill input 'conv2d_input' with random values (image is expected)
+[ INFO ] Infer Request 1 filling
+[ INFO ] Fill input 'conv2d_input' with random values (image is expected)
+[ INFO ] Infer Request 2 filling
+[ INFO ] Fill input 'conv2d_input' with random values (image is expected)
+[ INFO ] Infer Request 3 filling
+[ INFO ] Fill input 'conv2d_input' with random values (image is expected)
+[Step 10/11] Measuring performance (Start inference asyncronously, 4 inference requests using 4 streams for CPU, limits: 300000 ms duration)
+[Step 11/11] Dumping statistics report
+Count:      93632 iterations
+Duration:   300028.12 ms
+Latency:    12.56 ms
+Throughput: 312.08 FPS
+
+BENCHMARKING OPENVINO MODEL models/scene_classification_sep-conv.xml
+
+[Step 1/11] Parsing and validating input arguments
+[Step 2/11] Loading Inference Engine
+[ INFO ] InferenceEngine:
+         API version............. 2.1.37988
+[ INFO ] Device info
+         CPU
+         MKLDNNPlugin............ version 2.1
+         Build................... 37988
+
+[Step 3/11] Reading the Intermediate Representation network
+[Step 4/11] Resizing network to match image sizes and given batch
+[ INFO ] Network batch size: 1, precision: MIXED
+[Step 5/11] Configuring input of the model
+[Step 6/11] Setting device configuration
+[Step 7/11] Loading the model to the device
+[Step 8/11] Setting optimal runtime parameters
+[Step 9/11] Creating infer requests and filling input blobs with images
+[ INFO ] Network input 'separable_conv2d_input' precision U8, dimensions (NCHW): 1 3 150 150
+[ WARNING ] No input files were given: all inputs will be filled with random values!
+[ INFO ] Infer Request 0 filling
+[ INFO ] Fill input 'separable_conv2d_input' with random values (image is expected)
+[ INFO ] Infer Request 1 filling
+[ INFO ] Fill input 'separable_conv2d_input' with random values (image is expected)
+[ INFO ] Infer Request 2 filling
+[ INFO ] Fill input 'separable_conv2d_input' with random values (image is expected)
+[ INFO ] Infer Request 3 filling
+[ INFO ] Fill input 'separable_conv2d_input' with random values (image is expected)
+[Step 10/11] Measuring performance (Start inference asyncronously, 4 inference requests using 4 streams for CPU, limits: 300000 ms duration)
+[Step 11/11] Dumping statistics report
+Count:      199536 iterations
+Duration:   300015.24 ms
+Latency:    5.89 ms
+Throughput: 665.09 FPS
+
+BENCHMARKING OPENVINO MODEL models/scene_classification_input-scaling-0.75_layers-scaling-0.75_pruning-0.5_sep-conv.xml
+
+[Step 1/11] Parsing and validating input arguments
+[Step 2/11] Loading Inference Engine
+[ INFO ] InferenceEngine:
+         API version............. 2.1.37988
+[ INFO ] Device info
+         CPU
+         MKLDNNPlugin............ version 2.1
+         Build................... 37988
+
+[Step 3/11] Reading the Intermediate Representation network
+[Step 4/11] Resizing network to match image sizes and given batch
+[ INFO ] Network batch size: 1, precision: MIXED
+[Step 5/11] Configuring input of the model
+[Step 6/11] Setting device configuration
+[Step 7/11] Loading the model to the device
+[Step 8/11] Setting optimal runtime parameters
+[Step 9/11] Creating infer requests and filling input blobs with images
+[ INFO ] Network input 'separable_conv2d_input' precision U8, dimensions (NCHW): 1 3 112 112
+[ WARNING ] No input files were given: all inputs will be filled with random values!
+[ INFO ] Infer Request 0 filling
+[ INFO ] Fill input 'separable_conv2d_input' with random values (image is expected)
+[ INFO ] Infer Request 1 filling
+[ INFO ] Fill input 'separable_conv2d_input' with random values (image is expected)
+[ INFO ] Infer Request 2 filling
+[ INFO ] Fill input 'separable_conv2d_input' with random values (image is expected)
+[ INFO ] Infer Request 3 filling
+[ INFO ] Fill input 'separable_conv2d_input' with random values (image is expected)
+[Step 10/11] Measuring performance (Start inference asyncronously, 4 inference requests using 4 streams for CPU, limits: 300000 ms duration)
+[Step 11/11] Dumping statistics report
+Count:      503084 iterations
+Duration:   300009.31 ms
+Latency:    2.24 ms
+Throughput: 1676.89 FPS
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/init_ops.py:97: calling GlorotUniform.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/init_ops.py:97: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+2020-11-01 11:49:04.557348: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-11-01 11:49:04.578048: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2020-11-01 11:49:04.578084: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: ubuntu18
+2020-11-01 11:49:04.578093: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: ubuntu18
+2020-11-01 11:49:04.578208: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 455.32.0
+2020-11-01 11:49:04.578240: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 455.32.0
+2020-11-01 11:49:04.578250: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 455.32.0
+2020-11-01 11:49:04.578560: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-11-01 11:49:04.584911: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3500200000 Hz
+2020-11-01 11:49:04.585337: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7babd80 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-11-01 11:49:04.585363: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+WARNING:tensorflow:No training configuration found in save file: the model was *not* compiled. Compile it manually.
+
+BENCHMARKING TENSORFLOW MODEL models/scene_classification_input-scaling-0.75_layers-scaling-0.75_pruning-0.5.h5
+
+Processing data...
+Benchmarking...
+Count:      123000 iterations
+Duration:   303057.101726532 ms
+Throughput: 405.8641071245737 FPS
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/init_ops.py:97: calling GlorotUniform.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/init_ops.py:97: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+2020-11-01 11:54:11.390059: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-11-01 11:54:11.423388: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.329
+pciBusID: 0000:02:00.0
+2020-11-01 11:54:11.423600: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-11-01 11:54:11.424384: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-11-01 11:54:11.425105: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-11-01 11:54:11.425317: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-11-01 11:54:11.426232: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-11-01 11:54:11.426908: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-11-01 11:54:11.429183: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-11-01 11:54:11.429815: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1767] Adding visible gpu devices: 0
+2020-11-01 11:54:11.430121: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-11-01 11:54:11.434134: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3500200000 Hz
+2020-11-01 11:54:11.434542: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x79efd70 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-11-01 11:54:11.434556: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-11-01 11:54:11.484764: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7a82850 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2020-11-01 11:54:11.484790: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce GTX 980, Compute Capability 5.2
+2020-11-01 11:54:11.485223: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.329
+pciBusID: 0000:02:00.0
+2020-11-01 11:54:11.485293: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-11-01 11:54:11.485327: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-11-01 11:54:11.485358: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-11-01 11:54:11.485388: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-11-01 11:54:11.485419: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-11-01 11:54:11.485448: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-11-01 11:54:11.485478: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-11-01 11:54:11.486147: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1767] Adding visible gpu devices: 0
+2020-11-01 11:54:11.486194: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-11-01 11:54:11.486961: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1180] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-11-01 11:54:11.486977: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1186]      0 
+2020-11-01 11:54:11.486985: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1199] 0:   N 
+2020-11-01 11:54:11.487851: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1325] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3352 MB memory) -> physical GPU (device: 0, name: GeForce GTX 980, pci bus id: 0000:02:00.0, compute capability: 5.2)
+WARNING:tensorflow:No training configuration found in save file: the model was *not* compiled. Compile it manually.
+2020-11-01 11:54:11.964463: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-11-01 11:54:12.091121: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+
+BENCHMARKING TENSORFLOW MODEL models/scene_classification_input-scaling-0.75_layers-scaling-0.75_pruning-0.5.h5
+
+Processing data...
+Benchmarking...
+Count:      780000 iterations
+Duration:   300710.244178772 ms
+Throughput: 2593.8590889384222 FPS
+[Step 1/11] Parsing and validating input arguments
+[Step 2/11] Loading Inference Engine
+[ INFO ] InferenceEngine:
+         API version............. 2.1.37988
+[ INFO ] Device info
+         CPU
+         MKLDNNPlugin............ version 2.1
+         Build................... 37988
+
+[Step 3/11] Reading the Intermediate Representation network
+[Step 4/11] Resizing network to match image sizes and given batch
+[ INFO ] Network batch size: 1, precision: MIXED
+[Step 5/11] Configuring input of the model
+[Step 6/11] Setting device configuration
+[Step 7/11] Loading the model to the device
+[Step 8/11] Setting optimal runtime parameters
+[Step 9/11] Creating infer requests and filling input blobs with images
+[ INFO ] Network input 'conv2d_input' precision U8, dimensions (NCHW): 1 3 112 112
+[ WARNING ] No input files were given: all inputs will be filled with random values!
+[ INFO ] Infer Request 0 filling
+[ INFO ] Fill input 'conv2d_input' with random values (image is expected)
+[ INFO ] Infer Request 1 filling
+[ INFO ] Fill input 'conv2d_input' with random values (image is expected)
+[ INFO ] Infer Request 2 filling
+[ INFO ] Fill input 'conv2d_input' with random values (image is expected)
+[ INFO ] Infer Request 3 filling
+[ INFO ] Fill input 'conv2d_input' with random values (image is expected)
+[Step 10/11] Measuring performance (Start inference asyncronously, 4 inference requests using 4 streams for CPU, limits: 300000 ms duration)
+[Step 11/11] Dumping statistics report
+Count:      199036 iterations
+Duration:   300015.58 ms
+Latency:    5.76 ms
+Throughput: 663.42 FPS

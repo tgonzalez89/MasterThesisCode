@@ -1,0 +1,7 @@
+axbench
+data
+results
+results*.txt
+*.o
+*.out
+*.log
